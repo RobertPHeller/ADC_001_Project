@@ -1,0 +1,12 @@
+blas: 15 minutes
+    needs: gfortran
+lapack: 60 minutes
+    needs: gfortran, cmake
+fftw: 30 minutes
+    needs: gfortran, cmake -- also ldconfig
+armadillo: 15 minutes
+    needs lapack installed, cmake -- also ldconfig
+Basic Code: 30 minutes
+    Needed to make minor changes to the Makefile
+Install Math libs into image: 30 minutes
+    (Needed to remake things due to CMake weirdness)
