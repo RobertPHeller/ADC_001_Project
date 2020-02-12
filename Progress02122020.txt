@@ -1,0 +1,13 @@
+I compiled all four of the math library. No hacking needed -- just  installing
+gfortran and cmake.
+
+I created a repo: https://github.com/RobertPHeller/ADC_001_Project to hold any
+code, notes, scripts, etc. 
+
+I  forked  these  repos of  yours:  ADC-001_basic_code,  AnomalyDetector,  and
+MusicPlaypen.  I also  cloned  them  down to my  beagle  bone.  I  managed  to
+compile  your basic code, after making some mods to the  Makefile.  I commited
+the changes and pushed them to my fork and put in a pull request.
+
+At this point I am waiting on the arrival of the cape, tomorrow.
+
