@@ -1,0 +1,41 @@
+OK, I am having trouble getting the beagle to "see" the cape.  It *looks like*
+maybe the cape eeprom is invalid.  From the console transcripts (all of them):
+
+
+[  187.742464] watchdog watchdog0: watchdog did not stop!
+[  188.289016] configfs-gadget gadget: unbind function 'rndis'/dac3b540
+[  188.295574] configfs-gadget gadget: unbind function 'cdc_ethernet'/da924540
+[  188.302623] configfs-gadget gadget: unbind function 'acm'/db526540
+[  188.308858] configfs-gadget gadget: unbind function 'Mass Storage Function'/d[32;80Ha[32;80H9[32;80H3[32;80He[32;80H7[32;80H8[32;80H0[32;80H
+[  188.321893] reboot: Restarting system
+
+U-Boot SPL 2017.09-00002-g0f3f1c7907 (Oct 09 2017 - 15:30:22)
+Trying to boot from MMC1
+
+U-Boot 2017.09-00002-g0f3f1c7907 (Oct 09 2017 - 15:30:22 -0500), Build: jenkins-[32;80Hg[32;80Hi[32;80Ht[32;80Hh[32;80Hu[32;80Hb[32;80H_[32;80HB[32;80Ho[32;80Ho[32;80Ht[32;80Hl[32;80Ho[32;80Ha[32;80Hd[32;80He[32;80Hr[32;80H-[32;80HB[32;80Hu[32;80Hi[32;80Hl[32;80Hd[32;80He[32;80Hr[32;80H-[32;80H6[32;80H0[32;80H7[32;80H
+
+CPU  : AM335X-GP rev 2.1
+I2C:   ready
+DRAM:  512 MiB
+No match for driver 'omap_hsmmc'
+No match for driver 'omap_hsmmc'
+Some drivers were not found
+Reset Source: Global warm SW reset has occurred.
+Reset Source: Power-on reset has occurred.
+MMC:   OMAP SD/MMC: 0, OMAP SD/MMC: 1
+Using default environment
+
+Board: BeagleBone Black
+
+<ethaddr> not set. Validating first E-fuse MAC
+
+BeagleBone Black:
+BeagleBone: found invalid cape eeprom: i2c_probe: 0x54:
+BeagleBone: cape eeprom: i2c_probe: 0x55:
+BeagleBone: cape eeprom: i2c_probe: 0x56:
+BeagleBone: cape eeprom: i2c_probe: 0x57:
+Net:   eth0: MII MODE
+cpsw
+Press SPACE to abort autoboot in 2 seconds
+
+
