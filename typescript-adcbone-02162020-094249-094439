@@ -1,0 +1,164 @@
+Script started on Sun 16 Feb 2020 09:42:49 AM EST
+heller has logged on pts/0 from gollum.deepsoft.com at 16-Feb-2020 9:26.
+fruitloops% picocom /dev/ttyUSB0[1@-[1@b[1@ [1@1[1@1[1@5[1@2[1@0[1@0[1@ 
+picocom v1.7
+
+port is        : /dev/ttyUSB0
+flowcontrol    : none
+baudrate is    : 115200
+parity is      : none
+databits are   : 8
+escape is      : C-a
+local echo is  : no
+noinit is      : no
+noreset is     : no
+nolock is      : no
+send_cmd is    : sz -vv
+receive_cmd is : rz -vv
+imap is        : 
+omap is        : 
+emap is        : crcrlf,delbs,
+
+Terminal ready
+
+Debian GNU/Linux 9 beaglebone ttyS0
+
+BeagleBoard.org Debian Image 2017-10-10
+
+Support/FAQ: http://elinux.org/Beagleboard:BeagleBoneBlack_Debian
+
+default username:password is [debian:temppwd]
+
+beaglebone login: heller
+Password: 
+Last login: Sun Feb 16 15:35:49 UTC 2020 on ttyS0
+Linux beaglebone 4.4.91-ti-r133 #1 SMP Tue Oct 10 05:18:08 UTC 2017 armv7l
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+mail: Command not found.
+heller has logged on ttyS0 from local at 16-Feb-2020 15:43.
+beaglebone% dir /dev/mmcblk*[15Df -h[Kir /dev/disk/by-path/[22Duname -a[K[8Dsudo /sbin/reboot
+[sudo] password for heller: 
+[  519.707141] watchdog watchdog0: watchdog did not stop!
+[  520.259417] configfs-gadget gadget: unbind function 'rndis'/db771a80
+[  520.265919] configfs-gadget gadget: unbind function 'cdc_ethernet'/dac2e780
+[  520.272947] configfs-gadget gadget: unbind function 'acm'/dc4aa6c0
+[  520.279179] configfs-gadget gadget: unbind function 'Mass Storage Function'/dc49dd80
+[  520.291673] reboot: Restarting system
+
+U-Boot SPL 2018.09-00002-g0b54a51eee (Sep 10 2018 - 19:41:39 -0500)
+Trying to boot from MMC2
+Loading Environment from EXT4... ** File not found /boot/uboot.env **
+
+** Unable to read "/boot/uboot.env" from mmc0:1 **
+
+
+U-Boot 2018.09-00002-g0b54a51eee (Sep 10 2018 - 19:41:39 -0500), Build: jenkins-github_Bootloader-Builder-65
+
+CPU  : AM335X-GP rev 2.1
+I2C:   ready
+DRAM:  512 MiB
+No match for driver 'omap_hsmmc'
+No match for driver 'omap_hsmmc'
+Some drivers were not found
+Reset Source: Global warm SW reset has occurred.
+Reset Source: Power-on reset has occurred.
+RTC 32KCLK Source: External.
+MMC:   OMAP SD/MMC: 0, OMAP SD/MMC: 1
+Loading Environment from EXT4... ** File not found /boot/uboot.env **
+
+** Unable to read "/boot/uboot.env" from mmc0:1 **
+Board: BeagleBone Black
+<ethaddr> not set. Validating first E-fuse MAC
+BeagleBone Black:
+BeagleBone: found invalid cape eeprom: i2c_probe: 0x54:
+BeagleBone: cape eeprom: i2c_probe: 0x55:
+BeagleBone: cape eeprom: i2c_probe: 0x56:
+BeagleBone: cape eeprom: i2c_probe: 0x57:
+Net:   eth0: MII MODE
+cpsw, usb_ether
+Press SPACE to abort autoboot in 2 seconds
+board_name=[A335BNLT] ...
+board_rev=[000C] ...
+switch to partitions #0, OK
+mmc0 is current device
+SD/MMC found on device 0
+switch to partitions #0, OK
+mmc0 is current device
+Scanning mmc 0:1...
+gpio: pin 56 (gpio 56) value is 0
+gpio: pin 55 (gpio 55) value is 0
+gpio: pin 54 (gpio 54) value is 0
+gpio: pin 53 (gpio 53) value is 1
+switch to partitions #0, OK
+mmc0 is current device
+gpio: pin 54 (gpio 54) value is 1
+Checking for: /uEnv.txt ...
+Checking for: /boot.scr ...
+Checking for: /boot/boot.scr ...
+Checking for: /boot/uEnv.txt ...
+gpio: pin 55 (gpio 55) value is 1
+2045 bytes read in 68 ms (29.3 KiB/s)
+Loaded environment from /boot/uEnv.txt
+Checking if uname_r is set in /boot/uEnv.txt...
+gpio: pin 56 (gpio 56) value is 1
+Running uname_boot ...
+loading /boot/vmlinuz-4.4.91-ti-r133 ...
+8886912 bytes read in 616 ms (13.8 MiB/s)
+debug: [enable_uboot_overlays=1] ...
+debug: [enable_uboot_cape_universal=1] ...
+debug: [uboot_base_dtb_univ=am335x-boneblack-uboot-univ.dtb] ...
+uboot_overlays: [uboot_base_dtb=am335x-boneblack-uboot-univ.dtb] ...
+debug: unable to find [am335x-boneblack-uboot-univ.dtb] using [am335x-boneblack-uboot.dtb] instead ...
+debug: [uboot_base_dtb_univ=am335x-boneblack-uboot.dtb] ...
+uboot_overlays: [uboot_base_dtb=am335x-boneblack-uboot.dtb] ...
+uboot_overlays: Switching too: dtb=am335x-boneblack-uboot.dtb ...
+loading /boot/dtbs/4.4.91-ti-r133/am335x-boneblack-uboot.dtb ...
+53192 bytes read in 278 ms (186.5 KiB/s)
+uboot_overlays: [fdt_buffer=0x60000] ...
+uboot_overlays: loading /lib/firmware/BB-BONE-eMMC1-01-00A0.dtbo ...
+1105 bytes read in 206 ms (4.9 KiB/s)
+uboot_overlays: loading /lib/firmware/BB-HDMI-TDA998x-00A0.dtbo ...
+4169 bytes read in 474 ms (7.8 KiB/s)
+uboot_overlays: loading /lib/firmware/BB-ADC-00A0.dtbo ...
+695 bytes read in 726 ms (0 Bytes/s)
+uboot_overlays: loading /lib/firmware/AM335X-PRU-RPROC-4-4-TI-00A0.dtbo ...
+2402 bytes read in 811 ms (2 KiB/s)
+uboot_overlays: loading /lib/firmware/univ-bbb-EVA-00A0.dtbo ...
+54575 bytes read in 116 ms (459 KiB/s)
+loading /boot/initrd.img-4.4.91-ti-r133 ...
+5416133 bytes read in 400 ms (12.9 MiB/s)
+debug: [console=ttyO0,115200n8 bone_capemgr.uboot_capemgr_enabled=1 root=/dev/mmcblk0p1 ro rootfstype=ext4 rootwait coherent_pool=1M net.ifnames=0 quiet] ...
+debug: [bootz 0x82000000 0x88080000:52a4c5 88000000] ...
+## Flattened Device Tree blob at 88000000
+   Booting using the fdt blob at 0x88000000
+   Loading Ramdisk to 8fad5000, end 8ffff4c5 ... OK
+   reserving fdt memory region: addr=88000000 size=7a000
+   Loading Device Tree to 8fa58000, end 8fad4fff ... OK
+
+Starting kernel ...
+
+[    0.001618] clocksource_probe: no matching clocksources found
+[    2.117465] wkup_m3_ipc 44e11324.wkup_m3_ipc: could not get rproc handle
+[    2.365689] omap_voltage_late_init: Voltage driver support not added
+[    2.373776] PM: Cannot get wkup_m3_ipc handle
+
+Debian GNU/Linux 9 beaglebone ttyS0
+
+BeagleBoard.org Debian Image 2017-10-10
+
+Support/FAQ: http://elinux.org/Beagleboard:BeagleBoneBlack_Debian
+
+default username:password is [debian:temppwd]
+
+beaglebone login: [   42.524578] Error: Driver 'ecap' is already registered, aborting...
+
+Thanks for using picocom
+fruitloops% ^Dexit
+
+Script done on Sun 16 Feb 2020 09:44:39 AM EST

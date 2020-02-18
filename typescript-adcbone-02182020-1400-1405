@@ -1,0 +1,279 @@
+Script started on Tue 18 Feb 2020 01:59:22 PM EST
+heller has logged on pts/0 from :0 at 15-Feb-2020 6:54.
+heller has logged on pts/1 from :0 at 15-Feb-2020 6:54.
+heller has logged on pts/2 from :0 at 18-Feb-2020 13:59.
+heller has logged on pts/3 from :0 at 18-Feb-2020 13:59.
+heller has logged on pts/4 from local at 18-Feb-2020 13:59.
+heller has logged on tty1 from local at 15-Feb-2020 6:54.
+gollum.deepsoft.com% minicom /dev/[K[K[Kev/ttyUSB0 
+[!p[?3;4l[4l>[0m(B[?1h=[H[2J[0m(B[7m[33;1H[K[?12l[?25h[?25l                                                                               [?12l[?25h[?12l[?25h[33;34HNOR[1;1H[33;1H[?25l CTRL-A Z for help |  9600 8N1 | NOR | Minicom 2.3    | VT102 |      Offline   [33;62H[?12l[?25h[1;1H
+[0m(BWelcome to minicom 2.3
+
+OPTIONS: I18n 
+Compiled on Mar 22 2017, 08:13:25.
+Port /dev/ttyUSB0[7;18H[8;18HPress CTRL-A Z for help on special keys
+
+[4;23H[?25l+---------[Comm Parameters]----------+[5;23H|                                    |[6;23H|                                    |[7;23H| Speed            Parity      Data  |[8;23H| A: <next>        L: None     S: 5  |[9;23H| B: <prev>        M: Even     T: 6  |[10;23H| C:   9600        N: Odd      U: 7  |[11;23H| D:  38400        O: Mark     V: 8  |[12;23H| E: 115200        P: Space          |[13;23H|                                    |[14;23H| Stopbits                           |[15;23H| W: 1             Q: 8-N-1          |[16;23H| X: 2             R: 7-E-1          |[17;23H|                                    |[18;23H|                                    |[19;23H| Choice, or <Enter> to exit?        |[20;23H+------------------------------------+[19;53H[?12l[?25h[6;29HCurrent:  9600 8N1  [19;53H[6;29HCurrent: 115200 8N1  [19;53H[?12l[?25h[4;1HOPTIONS: I18n                                               [5;1HCompiled on Mar 22 2017, 08:13:25.                          [6;1HPort /dev/ttyUSB0                                           [7;1H                                                            [8;1H                 Press CTRL-A Z for help on special keys    [9;1H                                                            [10;1H                                                            [11;1H                                                            [12;1H                                                            [13;1H                                                            [14;1H                                                            [15;1H                                                            [16;1H                                                            [17;1H                                                            [18;1H                                                            [19;1H                                                            [20;1H                                                            [10;1H[33;21H[0m(B[7m115200 8N1[10;1H
+[0m(BU-Boot SPL 2018.09-00002-g0b54a51eee (Sep 10 2018 - 19:41:39 -0500)
+Trying to boot from MMC2
+Loading Environment from EXT4... ** File not found /boot/uboot.env **
+
+** Unable to read "/boot/uboot.env" from mmc0:1 **
+
+
+U-Boot 2018.09-00002-g0b54a51eee (Sep 10 2018 - 19:41:39 -0500), Build: jenkins-[18;80Hg[18;80Hi[18;80Ht[18;80Hh[18;80Hu[18;80Hb[18;80H_[18;80HB[18;80Ho[18;80Ho[18;80Ht[18;80Hl[18;80Ho[18;80Ha[18;80Hd[18;80He[18;80Hr[18;80H-[18;80HB[18;80Hu[18;80Hi[18;80Hl[18;80Hd[18;80He[18;80Hr[18;80H-[18;80H6[18;80H5[18;80H
+
+CPU  : AM335X-GP rev 2.1
+I2C:   ready
+DRAM:  512 MiB
+No match for driver 'omap_hsmmc'
+No match for driver 'omap_hsmmc'
+Some drivers were not found
+Reset Source: Power-on reset has occurred.
+RTC 32KCLK Source: External.
+MMC:   OMAP SD/MMC: 0, OMAP SD/MMC: 1
+Loading Environment from EXT4... ** File not found /boot/uboot.env **
+
+** Unable to read "/boot/uboot.env" from mmc0:1 **
+Board: BeagleBone Black[1;32r[32;1H
+[1;33r[32;1H<ethaddr> not set. Validating first E-fuse MAC[1;32r[32;1H
+[1;33r[32;1HBeagleBone Black:[1;32r[32;1H
+[1;33r[32;1HBeagleBone: found invalid cape eeprom: i2c_probe: 0x54:[1;32r[32;1H
+[1;33r[32;1HBeagleBone: cape eeprom: i2c_probe: 0x55:[1;32r[32;1H
+[1;33r[32;1HBeagleBone: cape eeprom: i2c_probe: 0x56:[1;32r[32;1H
+[1;33r[32;1HBeagleBone: cape eeprom: i2c_probe: 0x57:[1;32r[32;1H
+[1;33r[32;1HNet:   eth0: MII MODE[1;32r[32;1H
+[1;33r[32;1Hcpsw, usb_ether[1;32r[32;1H
+[1;33r[32;1HPress SPACE to abort autoboot in 2 seconds[1;32r[32;1H
+[1;33r[32;1Hboard_name=[A335BNLT] ...[1;32r[32;1H
+[1;33r[32;1Hboard_rev=[000C] ...[1;32r[32;1H
+[1;33r[32;1Hswitch to partitions #0, OK[1;32r[32;1H
+[1;33r[32;1Hmmc0 is current device[1;32r[32;1H
+[1;33r[32;1HSD/MMC found on device 0[1;32r[32;1H
+[1;33r[32;1Hswitch to partitions #0, OK[1;32r[32;1H
+[1;33r[32;1Hmmc0 is current device[1;32r[32;1H
+[1;33r[32;1HScanning mmc 0:1...[1;32r[32;1H
+[1;33r[32;1Hgpio: pin 56 (gpio 56) value is 0[1;32r[32;1H
+[1;33r[32;1Hgpio: pin 55 (gpio 55) value is 0[1;32r[32;1H
+[1;33r[32;1Hgpio: pin 54 (gpio 54) value is 0[1;32r[32;1H
+[1;33r[32;1Hgpio: pin 53 (gpio 53) value is 1[1;32r[32;1H
+[1;33r[32;1Hswitch to partitions #0, OK[1;32r[32;1H
+[1;33r[32;1Hmmc0 is current device[1;32r[32;1H
+[1;33r[32;1Hgpio: pin 54 (gpio 54) value is 1[1;32r[32;1H
+[1;33r[32;1HChecking for: /uEnv.txt ...[1;32r[32;1H
+[1;33r[32;1HChecking for: /boot.scr ...[1;32r[32;1H
+[1;33r[32;1HChecking for: /boot/boot.scr ...[1;32r[32;1H
+[1;33r[32;1HChecking for: /boot/uEnv.txt ...[1;32r[32;1H
+[1;33r[32;1Hgpio: pin 55 (gpio 55) value is 1[1;32r[32;1H
+[1;33r[32;1H2045 bytes read in 69 ms (28.3 KiB/s)[1;32r[32;1H
+[1;33r[32;1HLoaded environment from /boot/uEnv.txt[1;32r[32;1H
+[1;33r[32;1HChecking if uname_r is set in /boot/uEnv.txt...[1;32r[32;1H
+[1;33r[32;1Hgpio: pin 56 (gpio 56) value is 1[1;32r[32;1H
+[1;33r[32;1HRunning uname_boot ...[1;32r[32;1H
+[1;33r[32;1Hloading /boot/vmlinuz-4.4.91-ti-r133 ...[1;32r[32;1H
+[1;33r[32;1H8886912 bytes read in 616 ms (13.8 MiB/s)[1;32r[32;1H
+[1;33r[32;1Hdebug: [enable_uboot_overlays=1] ...[1;32r[32;1H
+[1;33r[32;1Hdebug: [enable_uboot_cape_universal=1] ...[1;32r[32;1H
+[1;33r[32;1Hdebug: [uboot_base_dtb_univ=am335x-boneblack-uboot-univ.dtb] ...[1;32r[32;1H
+[1;33r[32;1Huboot_overlays: [uboot_base_dtb=am335x-boneblack-uboot-univ.dtb] ...[1;32r[32;1H
+[1;33r[32;1Hdebug: unable to find [am335x-boneblack-uboot-univ.dtb] using [am335x-boneblack-[32;80Hu[32;80Hb[32;80Ho[32;80Ho[32;80Ht[32;80H.[32;80Hd[32;80Ht[32;80Hb[32;80H][32;80H [32;80Hi[32;80Hn[32;80Hs[32;80Ht[32;80He[32;80Ha[32;80Hd[32;80H [32;80H.[32;80H.[32;80H.[32;80H[1;32r[32;1H
+[1;33r[32;1Hdebug: [uboot_base_dtb_univ=am335x-boneblack-uboot.dtb] ...[1;32r[32;1H
+[1;33r[32;1Huboot_overlays: [uboot_base_dtb=am335x-boneblack-uboot.dtb] ...[1;32r[32;1H
+[1;33r[32;1Huboot_overlays: Switching too: dtb=am335x-boneblack-uboot.dtb ...[1;32r[32;1H
+[1;33r[32;1Hloading /boot/dtbs/4.4.91-ti-r133/am335x-boneblack-uboot.dtb ...[1;32r[32;1H
+[1;33r[32;1H53192 bytes read in 281 ms (184.6 KiB/s)[1;32r[32;1H
+[1;33r[32;1Huboot_overlays: [fdt_buffer=0x60000] ...[1;32r[32;1H
+[1;33r[32;1Huboot_overlays: loading /lib/firmware/BB-BONE-eMMC1-01-00A0.dtbo ...[1;32r[32;1H
+[1;33r[32;1H1105 bytes read in 206 ms (4.9 KiB/s)[1;32r[32;1H
+[1;33r[32;1Huboot_overlays: loading /lib/firmware/BB-HDMI-TDA998x-00A0.dtbo ...[1;32r[32;1H
+[1;33r[32;1H4169 bytes read in 475 ms (7.8 KiB/s)[1;32r[32;1H
+[1;33r[32;1Huboot_overlays: loading /lib/firmware/BB-ADC-00A0.dtbo ...[1;32r[32;1H
+[1;33r[32;1H695 bytes read in 728 ms (0 Bytes/s)[1;32r[32;1H
+[1;33r[32;1Huboot_overlays: loading /lib/firmware/AM335X-PRU-UIO-00A0.dtbo ...[1;32r[32;1H
+[1;33r[32;1H853 bytes read in 800 ms (1000 Bytes/s)[1;32r[32;1H
+[1;33r[32;1Huboot_overlays: loading /lib/firmware/univ-bbb-EVA-00A0.dtbo ...[1;32r[32;1H
+[1;33r[32;1H54575 bytes read in 116 ms (459 KiB/s)[1;32r[32;1H
+[1;33r[32;1Hloading /boot/initrd.img-4.4.91-ti-r133 ...[1;32r[32;1H
+[1;33r[32;1H5416133 bytes read in 400 ms (12.9 MiB/s)[1;32r[32;1H
+[1;33r[32;1Hdebug: [console=ttyO0,115200n8 bone_capemgr.uboot_capemgr_enabled=1 root=/dev/mm[32;80Hc[32;80Hb[32;80Hl[32;80Hk[32;80H0[32;80Hp[32;80H1[32;80H [32;80Hr[32;80Ho[32;80H [32;80Hr[32;80Ho[32;80Ho[32;80Ht[32;80Hf[32;80Hs[32;80Ht[32;80Hy[32;80Hp[32;80He[32;80H=[32;80He[32;80Hx[32;80Ht[32;80H4[32;80H [32;80Hr[32;80Ho[32;80Ho[32;80Ht[32;80Hw[32;80Ha[32;80Hi[32;80Ht[32;80H [32;80Hc[32;80Ho[32;80Hh[32;80He[32;80Hr[32;80He[32;80Hn[32;80Ht[32;80H_[32;80Hp[32;80Ho[32;80Ho[32;80Hl[32;80H=[32;80H1[32;80HM[32;80H [32;80Hn[32;80He[32;80Ht[32;80H.[32;80Hi[32;80Hf[32;80Hn[32;80Ha[32;80Hm[32;80He[32;80Hs[32;80H=[32;80H0[32;80H [32;80Hq[32;80Hu[32;80Hi[32;80He[32;80Ht[32;80H][32;80H [32;80H.[32;80H.[32;80H.[32;80H[1;32r[32;1H
+[1;33r[32;1Hdebug: [bootz 0x82000000 0x88080000:52a4c5 88000000] ...[1;32r[32;1H
+[1;33r[32;1H## Flattened Device Tree blob at 88000000[1;32r[32;1H
+[1;33r[32;1H   Booting using the fdt blob at 0x88000000[1;32r[32;1H
+[1;33r[32;1H   Loading Ramdisk to 8fad5000, end 8ffff4c5 ... OK[1;32r[32;1H
+[1;33r[32;1H   reserving fdt memory region: addr=88000000 size=7a000[1;32r[32;1H
+[1;33r[32;1H   Loading Device Tree to 8fa58000, end 8fad4fff ... OK[1;32r[32;1H
+[1;33r[32;1H[1;32r[32;1H
+[1;33r[32;1HStarting kernel ...[1;32r[32;1H
+[1;33r[32;1H[1;32r[32;1H
+[1;33r[32;1H[    0.001591] clocksource_probe: no matching clocksources found[1;32r[32;1H
+[1;33r[32;1H[    2.115759] wkup_m3_ipc 44e11324.wkup_m3_ipc: could not get rproc handle[1;32r[32;1H
+[1;33r[32;1H[    2.365953] omap_voltage_late_init: Voltage driver support not added[1;32r[32;1H
+[1;33r[32;1H[    2.374031] PM: Cannot get wkup_m3_ipc handle[1;32r[32;1H
+[1;33r[32;1H[1;32r[32;1H
+[1;33r[32;1HDebian GNU/Linux 9 beaglebone ttyS0[1;32r[32;1H
+[1;33r[32;1H[1;32r[32;1H
+[1;33r[32;1HBeagleBoard.org Debian Image 2017-10-10[1;32r[32;1H
+[1;33r[32;1H[1;32r[32;1H
+[1;33r[32;1HSupport/FAQ: http://elinux.org/Beagleboard:BeagleBoneBlack_Debian[1;32r[32;1H
+[1;33r[32;1H[1;32r[32;1H
+[1;33r[32;1Hdefault username:password is [debian:temppwd][1;32r[32;1H
+[1;33r[32;1H[1;32r[32;1H
+[1;33r[32;1Hbeaglebone login: heller[1;32r[32;1H
+[1;33r[32;1HPassword: [   42.257787] Error: Driver 'ecap' is already registered, aborting...[32;80H[1;32r[32;1H
+[1;33r[32;1H[   42.568533] Error: Driver 'ecap' is already registered, aborting...[1;32r[32;1H
+[1;33r[32;1H[1;32r[32;1H
+[1;33r[32;1HLast login: Tue Feb 18 06:02:24 UTC 2020 on ttyS0[1;32r[32;1H
+[1;33r[32;1HLinux beaglebone 4.4.91-ti-r133 #1 SMP Tue Oct 10 05:18:08 UTC 2017 armv7l[1;32r[32;1H
+[1;33r[32;1H[1;32r[32;1H
+[1;33r[32;1HThe programs included with the Debian GNU/Linux system are free software;[1;32r[32;1H
+[1;33r[32;1Hthe exact distribution terms for each program are described in the[1;32r[32;1H
+[1;33r[32;1Hindividual files in /usr/share/doc/*/copyright.[1;32r[32;1H
+[1;33r[32;1H[1;32r[32;1H
+[1;33r[32;1HDebian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent[1;32r[32;1H
+[1;33r[32;1Hpermitted by applicable law.[1;32r[32;1H
+[1;33r[32;1Hmail: Command not found.[1;32r[32;1H
+[1;33r[32;1Hheller has logged on ttyS0 from local at 15-Feb-2020 16:42.[1;32r[32;1H
+[1;33r[32;1Hbeaglebone% dir /lib/firmware/*ADC*[1;32r[32;1H
+[1;33r[32;1H/lib/firmware/ADC_001-00A0.dtbo  /lib/firmware/BB-ADC-00A0.dtbo[1;32r[32;1H
+[1;33r[32;1Hbeaglebone% dir /dev/mm[1;32r[32;1H
+[1;33r[32;1Hmmcblk0#      mmcblk1#      mmcblk1boot1# [1;32r[32;1H
+[1;33r[32;1Hmmcblk0p1#    mmcblk1boot0# mmcblk1p1#    [1;32r[32;1H
+[1;33r[32;1Hbeaglebone% dir /dev/mmcblk*[1;32r[32;1H
+[1;33r[32;1H/dev/mmcblk0[32;17H/dev/mmcblk1[32;33H   /dev/mmcblk1boot1[1;32r[32;1H
+[1;33r[32;1H/dev/mmcblk0p1[32;17H/dev/mmcblk1boot0  /dev/mmcblk1p1[1;32r[32;1H
+[1;33r[32;1Hbeaglebone% df -h[1;32r[32;1H
+[1;33r[32;1HFilesystem      Size  Used Avail Use% Mounted on[1;32r[32;1H
+[1;33r[32;1Hudev            217M     0  217M   0% /dev[1;32r[32;1H
+[1;33r[32;1Htmpfs            49M  5.0M   44M  11% /run[1;32r[32;1H
+[1;33r[32;1H/dev/mmcblk0p1  7.3G  4.5G  2.5G  65% /[1;32r[32;1H
+[1;33r[32;1Htmpfs           244M     0  244M   0% /dev/shm[1;32r[32;1H
+[1;33r[32;1Htmpfs           5.0M  4.0K  5.0M   1% /run/lock[1;32r[32;1H
+[1;33r[32;1Htmpfs           244M     0  244M   0% /sys/fs/cgroup[1;32r[32;1H
+[1;33r[32;1Htmpfs            49M     0   49M   0% /run/user/1001[1;32r[32;1H
+[1;33r[32;1Hbeaglebone% sudo dd if=/dev/zero bs=1M bc=10 of=/ /dev/mmcblk1[P[1;32r[32;1H
+[1;33r[32;1H[sudo] password for heller: [1;32r[32;1H
+[1;33r[32;1Hdd: unrecognized operand â€â€˜bc=10â€â€™[1;32r[32;1H
+[1;33r[32;1HTry 'dd --help' for more information.[1;32r[32;1H
+[1;33r[32;1Hbeaglebone% sudo dd if=/dev/zero bs=1M bc=10 of=/dev/mmcblk1[P[P =10 of=/dev/mmcblk1                     [32;40Hc =10 of=/dev/mmcblk1                    [32;41Ho =10 of=/dev/mmcblk1                   [32;42Hu =10 of=/dev/mmcblk1                  [32;43Hn =10 of=/dev/mmcblk1                 [32;44Ht[1;32r[32;1H
+[1;33r[32;1H10+0 records in[1;32r[32;1H
+[1;33r[32;1H10+0 records out[1;32r[32;1H
+[1;33r[32;1H10485760 bytes (10 MB, 10 MiB) copied, 1.92602 s, 5.4 MB/s[1;32r[32;1H
+[1;33r[32;1Hbeaglebone% sudo /sbin/reboot[1;32r[32;1H
+[1;33r[32;1H[  187.742464] watchdog watchdog0: watchdog did not stop![1;32r[32;1H
+[1;33r[32;1H[  188.289016] configfs-gadget gadget: unbind function 'rndis'/dac3b540[1;32r[32;1H
+[1;33r[32;1H[  188.295574] configfs-gadget gadget: unbind function 'cdc_ethernet'/da924540[1;32r[32;1H
+[1;33r[32;1H[  188.302623] configfs-gadget gadget: unbind function 'acm'/db526540[1;32r[32;1H
+[1;33r[32;1H[  188.308858] configfs-gadget gadget: unbind function 'Mass Storage Function'/d[32;80Ha[32;80H9[32;80H3[32;80He[32;80H7[32;80H8[32;80H0[32;80H[1;32r[32;1H
+[1;33r[32;1H[  188.321893] reboot: Restarting system[1;32r[32;1H
+[1;33r[32;1H[1;32r[32;1H
+[1;33r[32;1HU-Boot SPL 2017.09-00002-g0f3f1c7907 (Oct 09 2017 - 15:30:22)[1;32r[32;1H
+[1;33r[32;1HTrying to boot from MMC1[1;32r[32;1H
+[1;33r[32;1H[1;32r[32;1H
+[1;33r[32;1H[1;32r[32;1H
+[1;33r[32;1HU-Boot 2017.09-00002-g0f3f1c7907 (Oct 09 2017 - 15:30:22 -0500), Build: jenkins-[32;80Hg[32;80Hi[32;80Ht[32;80Hh[32;80Hu[32;80Hb[32;80H_[32;80HB[32;80Ho[32;80Ho[32;80Ht[32;80Hl[32;80Ho[32;80Ha[32;80Hd[32;80He[32;80Hr[32;80H-[32;80HB[32;80Hu[32;80Hi[32;80Hl[32;80Hd[32;80He[32;80Hr[32;80H-[32;80H6[32;80H0[32;80H7[32;80H[1;32r[32;1H
+[1;33r[32;1H[1;32r[32;1H
+[1;33r[32;1HCPU  : AM335X-GP rev 2.1[1;32r[32;1H
+[1;33r[32;1HI2C:   ready[1;32r[32;1H
+[1;33r[32;1HDRAM:  512 MiB[1;32r[32;1H
+[1;33r[32;1HNo match for driver 'omap_hsmmc'[1;32r[32;1H
+[1;33r[32;1HNo match for driver 'omap_hsmmc'[1;32r[32;1H
+[1;33r[32;1HSome drivers were not found[1;32r[32;1H
+[1;33r[32;1HReset Source: Global warm SW reset has occurred.[1;32r[32;1H
+[1;33r[32;1HReset Source: Power-on reset has occurred.[1;32r[32;1H
+[1;33r[32;1HMMC:   OMAP SD/MMC: 0, OMAP SD/MMC: 1[1;32r[32;1H
+[1;33r[32;1HUsing default environment[1;32r[32;1H
+[1;33r[32;1H[1;32r[32;1H
+[1;33r[32;1HBoard: BeagleBone Black[1;32r[32;1H
+[1;33r[32;1H<ethaddr> not set. Validating first E-fuse MAC[1;32r[32;1H
+[1;33r[32;1HBeagleBone Black:[1;32r[32;1H
+[1;33r[32;1HBeagleBone: found invalid cape eeprom: i2c_probe: 0x54:[1;32r[32;1H
+[1;33r[32;1HBeagleBone: cape eeprom: i2c_probe: 0x55:[1;32r[32;1H
+[1;33r[32;1HBeagleBone: cape eeprom: i2c_probe: 0x56:[1;32r[32;1H
+[1;33r[32;1HBeagleBone: cape eeprom: i2c_probe: 0x57:[1;32r[32;1H
+[1;33r[32;1HNet:   eth0: MII MODE[1;32r[32;1H
+[1;33r[32;1Hcpsw[1;32r[32;1H
+[1;33r[32;1HPress SPACE to abort autoboot in 2 seconds[1;32r[32;1H
+[1;33r[32;1Hboard_name=[A335BNLT] ...[1;32r[32;1H
+[1;33r[32;1Hboard_rev=[000C] ...[1;32r[32;1H
+[1;33r[32;1Hswitch to partitions #0, OK[1;32r[32;1H
+[1;33r[32;1Hmmc0 is current device[1;32r[32;1H
+[1;33r[32;1HSD/MMC found on device 0[1;32r[32;1H
+[1;33r[32;1H** Bad device 0:2 0x82000000 **[1;32r[32;1H
+[1;33r[32;1H** Bad device 0:2 0x82000000 **[1;32r[32;1H
+[1;33r[32;1Hswitch to partitions #0, OK[1;32r[32;1H
+[1;33r[32;1Hmmc0 is current device[1;32r[32;1H
+[1;33r[32;1HScanning mmc 0:1...[1;32r[32;1H
+[1;33r[32;1Hgpio: pin 56 (gpio 56) value is 0[1;32r[32;1H
+[1;33r[32;1Hgpio: pin 55 (gpio 55) value is 0[1;32r[32;1H
+[1;33r[32;1Hgpio: pin 54 (gpio 54) value is 0[1;32r[32;1H
+[1;33r[32;1Hgpio: pin 53 (gpio 53) value is 1[1;32r[32;1H
+[1;33r[32;1Hswitch to partitions #0, OK[1;32r[32;1H
+[1;33r[32;1Hmmc0 is current device[1;32r[32;1H
+[1;33r[32;1Hgpio: pin 54 (gpio 54) value is 1[1;32r[32;1H
+[1;33r[32;1HChecking for: /uEnv.txt ...[1;32r[32;1H
+[1;33r[32;1HChecking for: /boot.scr ...[1;32r[32;1H
+[1;33r[32;1HChecking for: /boot/boot.scr ...[1;32r[32;1H
+[1;33r[32;1HChecking for: /boot/uEnv.txt ...[1;32r[32;1H
+[1;33r[32;1Hgpio: pin 55 (gpio 55) value is 1[1;32r[32;1H
+[1;33r[32;1H2045 bytes read in 81 ms (24.4 KiB/s)[1;32r[32;1H
+[1;33r[32;1HLoaded environment from /boot/uEnv.txt[1;32r[32;1H
+[1;33r[32;1HChecking if uname_r is set in /boot/uEnv.txt...[1;32r[32;1H
+[1;33r[32;1Hgpio: pin 56 (gpio 56) value is 1[1;32r[32;1H
+[1;33r[32;1HRunning uname_boot ...[1;32r[32;1H
+[1;33r[32;1Hloading /boot/vmlinuz-4.4.91-ti-r133 ...[1;32r[32;1H
+[1;33r[32;1H8886912 bytes read in 626 ms (13.5 MiB/s)[1;32r[32;1H
+[1;33r[32;1Huboot_overlays: [uboot_base_dtb=am335x-boneblack-uboot.dtb] ...[1;32r[32;1H
+[1;33r[32;1Huboot_overlays: Switching too: dtb=am335x-boneblack-uboot.dtb ...[1;32r[32;1H
+[1;33r[32;1Hloading /boot/dtbs/4.4.91-ti-r133/am335x-boneblack-uboot.dtb ...[1;32r[32;1H
+[1;33r[32;1H53192 bytes read in 329 ms (157.2 KiB/s)[1;32r[32;1H
+[1;33r[32;1Huboot_overlays: [fdt_buffer=0x60000] ...[1;32r[32;1H
+[1;33r[32;1Huboot_overlays: loading /lib/firmware/AM335X-20-00A0.dtbo ...[1;32r[32;1H
+[1;33r[32;1H378 bytes read in 563 ms (0 Bytes/s)[1;32r[32;1H
+[1;33r[32;1Huboot_overlays: loading /lib/firmware/BB-BONE-eMMC1-01-00A0.dtbo ...[1;32r[32;1H
+[1;33r[32;1H1105 bytes read in 249 ms (3.9 KiB/s)[1;32r[32;1H
+[1;33r[32;1Huboot_overlays: loading /lib/firmware/BB-HDMI-TDA998x-00A0.dtbo ...[1;32r[32;1H
+[1;33r[32;1H4169 bytes read in 573 ms (6.8 KiB/s)[1;32r[32;1H
+[1;33r[32;1Huboot_overlays: loading /lib/firmware/BB-ADC-00A0.dtbo ...[1;32r[32;1H
+[1;33r[32;1H695 bytes read in 881 ms (0 Bytes/s)[1;32r[32;1H
+[1;33r[32;1Huboot_overlays: loading /lib/firmware/AM335X-PRU-UIO-00A0.dtbo ...[1;32r[32;1H
+[1;33r[32;1H853 bytes read in 968 ms (0 Bytes/s)[1;32r[32;1H
+[1;33r[32;1Huboot_overlays: loading /lib/firmware/univ-bbb-EVA-00A0.dtbo ...[1;32r[32;1H
+[1;33r[32;1H54575 bytes read in 139 ms (382.8 KiB/s)[1;32r[32;1H
+[1;33r[32;1Hloading /boot/initrd.img-4.4.91-ti-r133 ...[1;32r[32;1H
+[1;33r[32;1H5416133 bytes read in 411 ms (12.6 MiB/s)[1;32r[32;1H
+[1;33r[32;1Hdebug: [console=ttyO0,115200n8 bone_capemgr.uboot_capemgr_enabled=1 root=/dev/mm[32;80Hc[32;80Hb[32;80Hl[32;80Hk[32;80H0[32;80Hp[32;80H1[32;80H [32;80Hr[32;80Ho[32;80H [32;80Hr[32;80Ho[32;80Ho[32;80Ht[32;80Hf[32;80Hs[32;80Ht[32;80Hy[32;80Hp[32;80He[32;80H=[32;80He[32;80Hx[32;80Ht[32;80H4[32;80H [32;80Hr[32;80Ho[32;80Ho[32;80Ht[32;80Hw[32;80Ha[32;80Hi[32;80Ht[32;80H [32;80Hc[32;80Ho[32;80Hh[32;80He[32;80Hr[32;80He[32;80Hn[32;80Ht[32;80H_[32;80Hp[32;80Ho[32;80Ho[32;80Hl[32;80H=[32;80H1[32;80HM[32;80H [32;80Hn[32;80He[32;80Ht[32;80H.[32;80Hi[32;80Hf[32;80Hn[32;80Ha[32;80Hm[32;80He[32;80Hs[32;80H=[32;80H0[32;80H [32;80Hq[32;80Hu[32;80Hi[32;80He[32;80Ht[32;80H][32;80H [32;80H.[32;80H.[32;80H.[32;80H[1;32r[32;1H
+[1;33r[32;1Hdebug: [bootz 0x82000000 0x88080000:52a4c5 88000000] ...[1;32r[32;1H
+[1;33r[32;1H## Flattened Device Tree blob at 88000000[1;32r[32;1H
+[1;33r[32;1H   Booting using the fdt blob at 0x88000000[1;32r[32;1H
+[1;33r[32;1H   Loading Ramdisk to 8fad5000, end 8ffff4c5 ... OK[1;32r[32;1H
+[1;33r[32;1H   reserving fdt memory region: addr=88000000 size=75000[1;32r[32;1H
+[1;33r[32;1H   Loading Device Tree to 8fa5d000, end 8fad4fff ... OK[1;32r[32;1H
+[1;33r[32;1H[1;32r[32;1H
+[1;33r[32;1HStarting kernel ...[1;32r[32;1H
+[1;33r[32;1H[1;32r[32;1H
+[1;33r[32;1H[    0.001522] clocksource_probe: no matching clocksources found[1;32r[32;1H
+[1;33r[32;1H[    2.112416] wkup_m3_ipc 44e11324.wkup_m3_ipc: could not get rproc handle[1;32r[32;1H
+[1;33r[32;1H[    2.361973] omap_voltage_late_init: Voltage driver support not added[1;32r[32;1H
+[1;33r[32;1H[    2.370055] PM: Cannot get wkup_m3_ipc handle[1;32r[32;1H
+[1;33r[32;1H[1;32r[32;1H
+[1;33r[32;1HDebian GNU/Linux 9 beaglebone ttyS0[1;32r[32;1H
+[1;33r[32;1H[1;32r[32;1H
+[1;33r[32;1HBeagleBoard.org Debian Image 2017-10-10[1;32r[32;1H
+[1;33r[32;1H[1;32r[32;1H
+[1;33r[32;1HSupport/FAQ: http://elinux.org/Beagleboard:BeagleBoneBlack_Debian[1;32r[32;1H
+[1;33r[32;1H[1;32r[32;1H
+[1;33r[32;1Hdefault username:password is [debian:temppwd][1;32r[32;1H
+[1;33r[32;1H[1;32r[32;1H
+[1;33r[32;1Hbeaglebone login: [   42.529442] Error: Driver 'ecap' is already registered, abo[32;80Hr[32;80Ht[32;80Hi[32;80Hn[32;80Hg[32;80H.[32;80H.[32;80H.[32;80H[1;32r[32;1H
+[1;33r[32;1H[1;32r[32;1H
+[1;33r[32;1HDebian GNU/Linux 9 beaglebone ttyS0[1;32r[32;1H
+[1;33r[32;1H[1;32r[32;1H
+[1;33r[32;1HBeagleBoard.org Debian Image 2017-10-10[1;32r[32;1H
+[1;33r[32;1H[1;32r[32;1H
+[1;33r[32;1HSupport/FAQ: http://elinux.org/Beagleboard:BeagleBoneBlack_Debian[1;32r[32;1H
+[1;33r[32;1H[1;32r[32;1H
+[1;33r[32;1Hdefault username:password is [debian:temppwd][1;32r[32;1H
+[1;33r[32;1H[1;32r[32;1H
+[1;33r[32;1Hbeaglebone login: [2;6H[?25l+-------------------------------------------------------------------+[3;6H|                     Minicom Command Summary                       |[4;6H|                                                                   |[5;6H|          Commands can be called by CTRL-A <key>                   |[6;6H|                                                                   |[7;6H|               Main Functions                  Other Functions     |[8;6H|                                                                   |[9;6H| Dialing directory..D  run script (Go)....G | Clear Screen.......C |[10;6H| Send files.........S  Receive files......R | cOnfigure Minicom..O |[11;6H| comm Parameters....P  Add linefeed.......A | Suspend minicom....J |[12;6H| Capture on/off.....L  Hangup.............H | eXit and reset.....X |[13;6H| send break.........F  initialize Modem...M | Quit with no reset.Q |[14;6H| Terminal settings..T  run Kermit.........K | Cursor key mode....I |[15;6H| lineWrap on/off....W  local Echo on/off..E | Help screen........Z |[16;6H| Paste file.........Y                       | scroll Back........B |[17;6H|                                                                   |[18;6H|      Select function or press Enter for none.                     |[19;6H|                                                                   |[20;6H|             Written by Miquel van Smoorenburg 1991-1995           |[21;6H|             Some additions by Jukka Lahtinen 1997-2000            |[22;6H|             i18n by Arnaldo Carvalho de Melo 1998                 |[23;6H+-------------------------------------------------------------------+[18;53H[?12l[?25h[?12l[?25h[2;1H   Booting using the fdt blob at 0x88000000                               [3;1H   Loading Ramdisk to 8fad5000, end 8ffff4c5 ... OK                       [4;1H   reserving fdt memory region: addr=88000000 size=75000                  [5;1H   Loading Device Tree to 8fa5d000, end 8fad4fff ... OK                   [6;1H                                                                          [7;1HStarting kernel ...                                                       [8;1H                                                                          [9;1H[    0.001522] clocksource_probe: no matching clocksources found          [10;1H[    2.112416] wkup_m3_ipc 44e11324.wkup_m3_ipc: could not get rproc handl[11;1H[    2.361973] omap_voltage_late_init: Voltage driver support not added   [12;1H[    2.370055] PM: Cannot get wkup_m3_ipc handle                          [13;1H                                                                          [14;1HDebian GNU/Linux 9 beaglebone ttyS0                                       [15;1H                                                                          [16;1HBeagleBoard.org Debian Image 2017-10-10                                   [17;1H                                                                          [18;1HSupport/FAQ: http://elinux.org/Beagleboard:BeagleBoneBlack_Debian         [19;1H                                                                          [20;1Hdefault username:password is [debian:temppwd]                             [21;1H                                                                          [22;1Hbeaglebone login: [   42.529442] Error: Driver 'ecap' is already registere[23;1H                                                                          [32;19H[8;30H[?25l+----------------------+[9;30H| Leave without reset? |[10;30H|               No     |[11;30H+----------------------+[10;51H[?25l[10;33H[0m(B[7m   Yes  [?12l[?25h[8;1H[0m(B                                                     [9;1H[    0.001522] clocksource_probe: no matching clockso[10;1H[    2.112416] wkup_m3_ipc 44e11324.wkup_m3_ipc: coul[11;1H[    2.361973] omap_voltage_late_init: Voltage driver[32;19H[?12l[?25h[?12l[?25h[H[2J[?12l[?25h[?1l>[!p[?3;4l[4l>gollum.deepsoft.com% ^Dexit
+
+Script done on Tue 18 Feb 2020 02:05:16 PM EST
