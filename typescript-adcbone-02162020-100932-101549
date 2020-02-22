@@ -1,0 +1,499 @@
+Script started on Sun 16 Feb 2020 10:09:32 AM EST
+heller has logged on pts/0 from gollum.deepsoft.com at 16-Feb-2020 9:26.
+fruitloops% picocom -b 115200 /dev/ttyUSB0
+picocom v1.7
+
+port is        : /dev/ttyUSB0
+flowcontrol    : none
+baudrate is    : 115200
+parity is      : none
+databits are   : 8
+escape is      : C-a
+local echo is  : no
+noinit is      : no
+noreset is     : no
+nolock is      : no
+send_cmd is    : sz -vv
+receive_cmd is : rz -vv
+imap is        : 
+omap is        : 
+emap is        : crcrlf,delbs,
+
+Terminal ready
+
+Debian GNU/Linux 9 beaglebone ttyS0
+
+BeagleBoard.org Debian Image 2017-10-10
+
+Support/FAQ: http://elinux.org/Beagleboard:BeagleBoneBlack_Debian
+
+default username:password is [debian:temppwd]
+
+beaglebone login: heller
+Password: 
+Last login: Sun Feb 16 16:00:41 UTC 2020 on ttyS0
+Linux beaglebone 4.4.91-ti-r133 #1 SMP Tue Oct 10 05:18:08 UTC 2017 armv7l
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+mail: Command not found.
+heller has logged on ttyS0 from local at 16-Feb-2020 16:09.
+beaglebone% sudo mec /boot/uEnv.txt[18D[4P[14C[14Dumount -v /mnt[19Dless -X /mnt/boot/uEnv.txt[26D[4Pdir[19C[22Dsudo mount -r -t auto /dev/mmcblk1p1 /mnt[36Dfdisk -l /dev/mmcblk1[K01boot10[6D0[K1[26Ddf -h[Kir /boot/uboot/[6D[K[10Duname -a[K[8Dsudo /sbin/reboot
+[sudo] password for heller: 
+[  585.870269] watchdog watchdog0: watchdog did not stop!
+[  586.400872] configfs-gadget gadget: unbind function 'rndis'/dac4b9c0
+[  586.407350] configfs-gadget gadget: unbind function 'cdc_ethernet'/db191e40
+[  586.414384] configfs-gadget gadget: unbind function 'acm'/da9229c0
+[  586.420616] configfs-gadget gadget: unbind function 'Mass Storage Function'/db1bf980
+[  586.434120] reboot: Restarting system
+
+U-Boot SPL 2018.09-00002-g0b54a51eee (Sep 10 2018 - 19:41:39 -0500)
+Trying to boot from MMC2
+Loading Environment from EXT4... ** File not found /boot/uboot.env **
+
+** Unable to read "/boot/uboot.env" from mmc0:1 **
+
+
+U-Boot 2018.09-00002-g0b54a51eee (Sep 10 2018 - 19:41:39 -0500), Build: jenkins-github_Bootloader-Builder-65
+
+CPU  : AM335X-GP rev 2.1
+I2C:   ready
+DRAM:  512 MiB
+No match for driver 'omap_hsmmc'
+No match for driver 'omap_hsmmc'
+Some drivers were not found
+Reset Source: Global warm SW reset has occurred.
+Reset Source: Power-on reset has occurred.
+RTC 32KCLK Source: External.
+MMC:   OMAP SD/MMC: 0, OMAP SD/MMC: 1
+Loading Environment from EXT4... ** File not found /boot/uboot.env **
+
+** Unable to read "/boot/uboot.env" from mmc0:1 **
+Board: BeagleBone Black
+<ethaddr> not set. Validating first E-fuse MAC
+BeagleBone Black:
+BeagleBone: found invalid cape eeprom: i2c_probe: 0x54:
+BeagleBone: cape eeprom: i2c_probe: 0x55:
+BeagleBone: cape eeprom: i2c_probe: 0x56:
+BeagleBone: cape eeprom: i2c_probe: 0x57:
+Net:   eth0: MII MODE
+cpsw, usb_ether
+Press SPACE to abort autoboot in 2 seconds
+board_name=[A335BNLT] ...
+board_rev=[000C] ...
+switch to partitions #0, OK
+mmc0 is current device
+SD/MMC found on device 0
+switch to partitions #0, OK
+mmc0 is current device
+Scanning mmc 0:1...
+gpio: pin 56 (gpio 56) value is 0
+gpio: pin 55 (gpio 55) value is 0
+gpio: pin 54 (gpio 54) value is 0
+gpio: pin 53 (gpio 53) value is 1
+switch to partitions #0, OK
+mmc0 is current device
+gpio: pin 54 (gpio 54) value is 1
+Checking for: /uEnv.txt ...
+Checking for: /boot.scr ...
+Checking for: /boot/boot.scr ...
+Checking for: /boot/uEnv.txt ...
+gpio: pin 55 (gpio 55) value is 1
+2045 bytes read in 68 ms (29.3 KiB/s)
+Loaded environment from /boot/uEnv.txt
+Checking if uname_r is set in /boot/uEnv.txt...
+gpio: pin 56 (gpio 56) value is 1
+Running uname_boot ...
+loading /boot/vmlinuz-4.4.91-ti-r133 ...
+8886912 bytes read in 615 ms (13.8 MiB/s)
+debug: [enable_uboot_overlays=1] ...
+debug: [enable_uboot_cape_universal=1] ...
+debug: [uboot_base_dtb_univ=am335x-boneblack-uboot-univ.dtb] ...
+uboot_overlays: [uboot_base_dtb=am335x-boneblack-uboot-univ.dtb] ...
+debug: unable to find [am335x-boneblack-uboot-univ.dtb] using [am335x-boneblack-uboot.dtb] instead ...
+debug: [uboot_base_dtb_univ=am335x-boneblack-uboot.dtb] ...
+uboot_overlays: [uboot_base_dtb=am335x-boneblack-uboot.dtb] ...
+uboot_overlays: Switching too: dtb=am335x-boneblack-uboot.dtb ...
+loading /boot/dtbs/4.4.91-ti-r133/am335x-boneblack-uboot.dtb ...
+53192 bytes read in 279 ms (185.5 KiB/s)
+uboot_overlays: [fdt_buffer=0x60000] ...
+uboot_overlays: loading /lib/firmware/BB-BONE-eMMC1-01-00A0.dtbo ...
+1105 bytes read in 206 ms (4.9 KiB/s)
+uboot_overlays: loading /lib/firmware/BB-HDMI-TDA998x-00A0.dtbo ...
+4169 bytes read in 474 ms (7.8 KiB/s)
+uboot_overlays: loading /lib/firmware/BB-ADC-00A0.dtbo ...
+695 bytes read in 727 ms (0 Bytes/s)
+uboot_overlays: loading /lib/firmware/AM335X-PRU-UIO-00A0.dtbo ...
+853 bytes read in 798 ms (1000 Bytes/s)
+uboot_overlays: loading /lib/firmware/univ-bbb-EVA-00A0.dtbo ...
+54575 bytes read in 116 ms (459 KiB/s)
+loading /boot/initrd.img-4.4.91-ti-r133 ...
+5416133 bytes read in 400 ms (12.9 MiB/s)
+debug: [console=ttyO0,115200n8 bone_capemgr.uboot_capemgr_enabled=1 root=/dev/mmcblk0p1 ro rootfstype=ext4 rootwait coherent_pool=1M net.ifnames=0 quiet] ...
+debug: [bootz 0x82000000 0x88080000:52a4c5 88000000] ...
+## Flattened Device Tree blob at 88000000
+   Booting using the fdt blob at 0x88000000
+   Loading Ramdisk to 8fad5000, end 8ffff4c5 ... OK
+   reserving fdt memory region: addr=88000000 size=7a000
+   Loading Device Tree to 8fa58000, end 8fad4fff ... OK
+
+Starting kernel ...
+
+[    0.001603] clocksource_probe: no matching clocksources found
+[    2.116006] wkup_m3_ipc 44e11324.wkup_m3_ipc: could not get rproc handle
+[    2.365954] omap_voltage_late_init: Voltage driver support not added
+[    2.374039] PM: Cannot get wkup_m3_ipc handle
+
+Debian GNU/Linux 9 beaglebone ttyS0
+
+BeagleBoard.org Debian Image 2017-10-10
+
+Support/FAQ: http://elinux.org/Beagleboard:BeagleBoneBlack_Debian
+
+default username:password is [debian:temppwd]
+
+beaglebone login: heller
+Password: [   42.303821] Error: Driver 'ecap' is already registered, aborting...
+[   42.557001] Error: Driver 'ecap' is already registered, aborting...
+
+Last login: Sun Feb 16 16:09:19 UTC 2020 on ttyS0
+Linux beaglebone 4.4.91-ti-r133 #1 SMP Tue Oct 10 05:18:08 UTC 2017 armv7l
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+mail: Command not found.
+heller has logged on ttyS0 from local at 16-Feb-2020 16:10.
+beaglebone% 
+beaglebone% chd ADC_001Project/
+~/ADC_001Project ~ 
+beaglebone% chd AD
+ADC-001_basic_code/           ADC_001Project_Quote.pdf 
+ADC-001_hardware_information/ ADC_001Project_Quote.tex~ 
+ADC_001_Project/              ADC_001Project_Quote.tex 
+ADC_001Project_Quote.log      
+beaglebone% chd ADC-
+ADC-001_basic_code/           ADC-001_hardware_information/
+beaglebone% chd ADC-001_basic_code/
+~/ADC_001Project/ADC-001_basic_code ~/ADC_001Project ~ 
+beaglebone% sudo ./fu[Kix_uio.sh 
+[sudo] password for heller: 
+Installing uio_pruss module .../fix_uio.sh: line 27: /sys/devices/bone_capemgr.9/slots: No such file or directory
+.../fix_uio.sh: line 35: /sys/devices/bone_capemgr.9/slots: No such file or directory
+.. Success!
+beaglebone% less -X fix_uio.sh 
+#!/bin/bash
+
+# Run this script to install the device tree overlay.  In principle,
+# the device tree overlay should be already loaded, but oftentimes the
+# BBB comes up with the overlay unloaded, or the cape is somehow messed up.  
+# You can see if the cape's presence has been sensed using this command:
+#
+#    cat /sys/devices/bone_capemgr.*/slots
+#
+# and use this command to see if the device tree overlay is loaded:
+#
+#    cat /sys/kernel/debug/pinctrl/44e10800.pinmux/pinmux-pins 
+
+
+progress_and_delay () {
+    echo -n "."
+    sleep 1
+}
+
+SLOTS=/sys/devices/bone_capemgr.*/slots
+
+echo -n "Installing uio_pruss module ."
+
+[7mfix_uio.sh[27m[K[Kbeaglebone% cat /sys/devices/bone_capemgr.*/slots
+cat: No match.
+beaglebone% cat /sys/kernel/debug/pinctrl/44e10800.pinmux/pinmux-pins 
+cat: /sys/kernel/debug/pinctrl/44e10800.pinmux/pinmux-pins: Permission denied
+beaglebone% cat /sys/kernel/debug/pinctrl/44e10800.pinmux/pinmux-pins[Dux-pins[D[K[K[1@s[1@u[1@d[1@o[1@ 
+Pinmux settings per pin
+Format: pin (name): mux_owner gpio_owner hog?
+pin 0 (44e10800.0): 481d8000.mmc (GPIO UNCLAIMED) function pinmux_emmc_pins group pinmux_emmc_pins
+pin 1 (44e10804.0): 481d8000.mmc (GPIO UNCLAIMED) function pinmux_emmc_pins group pinmux_emmc_pins
+pin 2 (44e10808.0): 481d8000.mmc (GPIO UNCLAIMED) function pinmux_emmc_pins group pinmux_emmc_pins
+pin 3 (44e1080c.0): 481d8000.mmc (GPIO UNCLAIMED) function pinmux_emmc_pins group pinmux_emmc_pins
+pin 4 (44e10810.0): 481d8000.mmc (GPIO UNCLAIMED) function pinmux_emmc_pins group pinmux_emmc_pins
+pin 5 (44e10814.0): 481d8000.mmc (GPIO UNCLAIMED) function pinmux_emmc_pins group pinmux_emmc_pins
+pin 6 (44e10818.0): 481d8000.mmc (GPIO UNCLAIMED) function pinmux_emmc_pins group pinmux_emmc_pins
+pin 7 (44e1081c.0): 481d8000.mmc (GPIO UNCLAIMED) function pinmux_emmc_pins group pinmux_emmc_pins
+pin 8 (44e10820.0): ocp:P8_19_pinmux (GPIO UNCLAIMED) function pinmux_P8_19_default_pin group pinmux_P8_19_default_pin
+pin 9 (44e10824.0): ocp:P8_13_pinmux (GPIO UNCLAIMED) function pinmux_P8_13_default_pin group pinmux_P8_13_default_pin
+pin 10 (44e10828.0): ocp:P8_14_pinmux (GPIO UNCLAIMED) function pinmux_P8_14_default_pin group pinmux_P8_14_default_pin
+pin 11 (44e1082c.0): ocp:P8_17_pinmux (GPIO UNCLAIMED) function pinmux_P8_17_default_pin group pinmux_P8_17_default_pin
+pin 12 (44e10830.0): ocp:P8_12_pinmux (GPIO UNCLAIMED) function pinmux_P8_12_default_pin group pinmux_P8_12_default_pin
+pin 13 (44e10834.0): ocp:P8_11_pinmux (GPIO UNCLAIMED) function pinmux_P8_11_default_pin group pinmux_P8_11_default_pin
+pin 14 (44e10838.0): ocp:P8_16_pinmux (GPIO UNCLAIMED) function pinmux_P8_16_default_pin group pinmux_P8_16_default_pin
+pin 15 (44e1083c.0): ocp:P8_15_pinmux (GPIO UNCLAIMED) function pinmux_P8_15_default_pin group pinmux_P8_15_default_pin
+pin 16 (44e10840.0): ocp:P9_15_pinmux (GPIO UNCLAIMED) function pinmux_P9_15_default_pin group pinmux_P9_15_default_pin
+pin 17 (44e10844.0): ocp:P9_23_pinmux (GPIO UNCLAIMED) function pinmux_P9_23_default_pin group pinmux_P9_23_default_pin
+pin 18 (44e10848.0): ocp:P9_14_pinmux (GPIO UNCLAIMED) function pinmux_P9_14_default_pin group pinmux_P9_14_default_pin
+pin 19 (44e1084c.0): ocp:P9_16_pinmux (GPIO UNCLAIMED) function pinmux_P9_16_default_pin group pinmux_P9_16_default_pin
+pin 20 (44e10850.0): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 21 (44e10854.0): leds (GPIO UNCLAIMED) function user_leds_default group user_leds_default
+pin 22 (44e10858.0): leds (GPIO UNCLAIMED) function user_leds_default group user_leds_default
+pin 23 (44e1085c.0): leds (GPIO UNCLAIMED) function user_leds_default group user_leds_default
+pin 24 (44e10860.0): leds (GPIO UNCLAIMED) function user_leds_default group user_leds_default
+pin 25 (44e10864.0): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 26 (44e10868.0): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 27 (44e1086c.0): 48038000.mcasp (GPIO UNCLAIMED) function mcasp0_pins group mcasp0_pins
+pin 28 (44e10870.0): ocp:P9_11_pinmux (GPIO UNCLAIMED) function pinmux_P9_11_default_pin group pinmux_P9_11_default_pin
+pin 29 (44e10874.0): ocp:P9_13_pinmux (GPIO UNCLAIMED) function pinmux_P9_13_default_pin group pinmux_P9_13_default_pin
+pin 30 (44e10878.0): ocp:P9_12_pinmux (GPIO UNCLAIMED) function pinmux_P9_12_default_pin group pinmux_P9_12_default_pin
+pin 31 (44e1087c.0): ocp:P8_26_pinmux (GPIO UNCLAIMED) function pinmux_P8_26_default_pin group pinmux_P8_26_default_pin
+pin 32 (44e10880.0): 481d8000.mmc (GPIO UNCLAIMED) function pinmux_emmc_pins group pinmux_emmc_pins
+pin 33 (44e10884.0): 481d8000.mmc (GPIO UNCLAIMED) function pinmux_emmc_pins group pinmux_emmc_pins
+pin 34 (44e10888.0): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 35 (44e1088c.0): ocp:P8_18_pinmux (GPIO UNCLAIMED) function pinmux_P8_18_default_pin group pinmux_P8_18_default_pin
+pin 36 (44e10890.0): ocp:P8_07_pinmux (GPIO UNCLAIMED) function pinmux_P8_07_default_pin group pinmux_P8_07_default_pin
+pin 37 (44e10894.0): ocp:P8_08_pinmux (GPIO UNCLAIMED) function pinmux_P8_08_default_pin group pinmux_P8_08_default_pin
+pin 38 (44e10898.0): ocp:P8_10_pinmux (GPIO UNCLAIMED) function pinmux_P8_10_default_pin group pinmux_P8_10_default_pin
+pin 39 (44e1089c.0): ocp:P8_09_pinmux (GPIO UNCLAIMED) function pinmux_P8_09_default_pin group pinmux_P8_09_default_pin
+pin 40 (44e108a0.0): 0-0070 (GPIO UNCLAIMED) function nxp_hdmi_bonelt_pins group nxp_hdmi_bonelt_pins
+pin 41 (44e108a4.0): 0-0070 (GPIO UNCLAIMED) function nxp_hdmi_bonelt_pins group nxp_hdmi_bonelt_pins
+pin 42 (44e108a8.0): 0-0070 (GPIO UNCLAIMED) function nxp_hdmi_bonelt_pins group nxp_hdmi_bonelt_pins
+pin 43 (44e108ac.0): 0-0070 (GPIO UNCLAIMED) function nxp_hdmi_bonelt_pins group nxp_hdmi_bonelt_pins
+pin 44 (44e108b0.0): 0-0070 (GPIO UNCLAIMED) function nxp_hdmi_bonelt_pins group nxp_hdmi_bonelt_pins
+pin 45 (44e108b4.0): 0-0070 (GPIO UNCLAIMED) function nxp_hdmi_bonelt_pins group nxp_hdmi_bonelt_pins
+pin 46 (44e108b8.0): 0-0070 (GPIO UNCLAIMED) function nxp_hdmi_bonelt_pins group nxp_hdmi_bonelt_pins
+pin 47 (44e108bc.0): 0-0070 (GPIO UNCLAIMED) function nxp_hdmi_bonelt_pins group nxp_hdmi_bonelt_pins
+pin 48 (44e108c0.0): 0-0070 (GPIO UNCLAIMED) function nxp_hdmi_bonelt_pins group nxp_hdmi_bonelt_pins
+pin 49 (44e108c4.0): 0-0070 (GPIO UNCLAIMED) function nxp_hdmi_bonelt_pins group nxp_hdmi_bonelt_pins
+pin 50 (44e108c8.0): 0-0070 (GPIO UNCLAIMED) function nxp_hdmi_bonelt_pins group nxp_hdmi_bonelt_pins
+pin 51 (44e108cc.0): 0-0070 (GPIO UNCLAIMED) function nxp_hdmi_bonelt_pins group nxp_hdmi_bonelt_pins
+pin 52 (44e108d0.0): 0-0070 (GPIO UNCLAIMED) function nxp_hdmi_bonelt_pins group nxp_hdmi_bonelt_pins
+pin 53 (44e108d4.0): 0-0070 (GPIO UNCLAIMED) function nxp_hdmi_bonelt_pins group nxp_hdmi_bonelt_pins
+pin 54 (44e108d8.0): 0-0070 (GPIO UNCLAIMED) function nxp_hdmi_bonelt_pins group nxp_hdmi_bonelt_pins
+pin 55 (44e108dc.0): 0-0070 (GPIO UNCLAIMED) function nxp_hdmi_bonelt_pins group nxp_hdmi_bonelt_pins
+pin 56 (44e108e0.0): 0-0070 (GPIO UNCLAIMED) function nxp_hdmi_bonelt_pins group nxp_hdmi_bonelt_pins
+pin 57 (44e108e4.0): 0-0070 (GPIO UNCLAIMED) function nxp_hdmi_bonelt_pins group nxp_hdmi_bonelt_pins
+pin 58 (44e108e8.0): 0-0070 (GPIO UNCLAIMED) function nxp_hdmi_bonelt_pins group nxp_hdmi_bonelt_pins
+pin 59 (44e108ec.0): 0-0070 (GPIO UNCLAIMED) function nxp_hdmi_bonelt_pins group nxp_hdmi_bonelt_pins
+pin 60 (44e108f0.0): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 61 (44e108f4.0): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 62 (44e108f8.0): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 63 (44e108fc.0): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 64 (44e10900.0): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 65 (44e10904.0): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 66 (44e10908.0): 4a100000.ethernet (GPIO UNCLAIMED) function cpsw_default group cpsw_default
+pin 67 (44e1090c.0): 4a100000.ethernet (GPIO UNCLAIMED) function cpsw_default group cpsw_default
+pin 68 (44e10910.0): 4a100000.ethernet (GPIO UNCLAIMED) function cpsw_default group cpsw_default
+pin 69 (44e10914.0): 4a100000.ethernet (GPIO UNCLAIMED) function cpsw_default group cpsw_default
+pin 70 (44e10918.0): 4a100000.ethernet (GPIO UNCLAIMED) function cpsw_default group cpsw_default
+pin 71 (44e1091c.0): 4a100000.ethernet (GPIO UNCLAIMED) function cpsw_default group cpsw_default
+pin 72 (44e10920.0): 4a100000.ethernet (GPIO UNCLAIMED) function cpsw_default group cpsw_default
+pin 73 (44e10924.0): 4a100000.ethernet (GPIO UNCLAIMED) function cpsw_default group cpsw_default
+pin 74 (44e10928.0): 4a100000.ethernet (GPIO UNCLAIMED) function cpsw_default group cpsw_default
+pin 75 (44e1092c.0): 4a100000.ethernet (GPIO UNCLAIMED) function cpsw_default group cpsw_default
+pin 76 (44e10930.0): 4a100000.ethernet (GPIO UNCLAIMED) function cpsw_default group cpsw_default
+pin 77 (44e10934.0): 4a100000.ethernet (GPIO UNCLAIMED) function cpsw_default group cpsw_default
+pin 78 (44e10938.0): 4a100000.ethernet (GPIO UNCLAIMED) function cpsw_default group cpsw_default
+pin 79 (44e1093c.0): 4a100000.ethernet (GPIO UNCLAIMED) function cpsw_default group cpsw_default
+pin 80 (44e10940.0): 4a100000.ethernet (GPIO UNCLAIMED) function cpsw_default group cpsw_default
+pin 81 (44e10944.0): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 82 (44e10948.0): 4a101000.mdio (GPIO UNCLAIMED) function davinci_mdio_default group davinci_mdio_default
+pin 83 (44e1094c.0): 4a101000.mdio (GPIO UNCLAIMED) function davinci_mdio_default group davinci_mdio_default
+pin 84 (44e10950.0): ocp:P9_22_pinmux (GPIO UNCLAIMED) function pinmux_P9_22_default_pin group pinmux_P9_22_default_pin
+pin 85 (44e10954.0): ocp:P9_21_pinmux (GPIO UNCLAIMED) function pinmux_P9_21_default_pin group pinmux_P9_21_default_pin
+pin 86 (44e10958.0): ocp:P9_18_pinmux (GPIO UNCLAIMED) function pinmux_P9_18_default_pin group pinmux_P9_18_default_pin
+pin 87 (44e1095c.0): ocp:P9_17_pinmux (GPIO UNCLAIMED) function pinmux_P9_17_default_pin group pinmux_P9_17_default_pin
+pin 88 (44e10960.0): 48060000.mmc (GPIO UNCLAIMED) function pinmux_mmc1_pins group pinmux_mmc1_pins
+pin 89 (44e10964.0): ocp:P9_42_pinmux (GPIO UNCLAIMED) function pinmux_P9_42_default_pin group pinmux_P9_42_default_pin
+pin 90 (44e10968.0): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 91 (44e1096c.0): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 92 (44e10970.0): 44e09000.serial (GPIO UNCLAIMED) function pinmux_uart0_pins group pinmux_uart0_pins
+pin 93 (44e10974.0): 44e09000.serial (GPIO UNCLAIMED) function pinmux_uart0_pins group pinmux_uart0_pins
+pin 94 (44e10978.0): 4819c000.i2c (GPIO UNCLAIMED) function pinmux_i2c2_pins group pinmux_i2c2_pins
+pin 95 (44e1097c.0): 4819c000.i2c (GPIO UNCLAIMED) function pinmux_i2c2_pins group pinmux_i2c2_pins
+pin 96 (44e10980.0): ocp:P9_26_pinmux (GPIO UNCLAIMED) function pinmux_P9_26_default_pin group pinmux_P9_26_default_pin
+pin 97 (44e10984.0): ocp:P9_24_pinmux (GPIO UNCLAIMED) function pinmux_P9_24_default_pin group pinmux_P9_24_default_pin
+pin 98 (44e10988.0): 44e0b000.i2c (GPIO UNCLAIMED) function pinmux_i2c0_pins group pinmux_i2c0_pins
+pin 99 (44e1098c.0): 44e0b000.i2c (GPIO UNCLAIMED) function pinmux_i2c0_pins group pinmux_i2c0_pins
+pin 100 (44e10990.0): 48038000.mcasp (GPIO UNCLAIMED) function mcasp0_pins group mcasp0_pins
+pin 101 (44e10994.0): 48038000.mcasp (GPIO UNCLAIMED) function mcasp0_pins group mcasp0_pins
+pin 102 (44e10998.0): ocp:P9_30_pinmux (GPIO UNCLAIMED) function pinmux_P9_30_default_pin group pinmux_P9_30_default_pin
+pin 103 (44e1099c.0): 48038000.mcasp (GPIO UNCLAIMED) function mcasp0_pins group mcasp0_pins
+pin 104 (44e109a0.0): ocp:P9_92_pinmux (GPIO UNCLAIMED) function pinmux_P9_92_default_pin group pinmux_P9_92_default_pin
+pin 105 (44e109a4.0): ocp:P9_27_pinmux (GPIO UNCLAIMED) function pinmux_P9_27_default_pin group pinmux_P9_27_default_pin
+pin 106 (44e109a8.0): ocp:P9_91_pinmux (GPIO UNCLAIMED) function pinmux_P9_91_default_pin group pinmux_P9_91_default_pin
+pin 107 (44e109ac.0): 48038000.mcasp (GPIO UNCLAIMED) function mcasp0_pins group mcasp0_pins
+pin 108 (44e109b0.0): 0-0070 (GPIO UNCLAIMED) function nxp_hdmi_bonelt_pins group nxp_hdmi_bonelt_pins
+pin 109 (44e109b4.0): ocp:P9_41_pinmux (GPIO UNCLAIMED) function pinmux_P9_41_default_pin group pinmux_P9_41_default_pin
+pin 110 (44e109b8.0): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 111 (44e109bc.0): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 112 (44e109c0.0): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 113 (44e109c4.0): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 114 (44e109c8.0): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 115 (44e109cc.0): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 116 (44e109d0.0): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 117 (44e109d4.0): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 118 (44e109d8.0): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 119 (44e109dc.0): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 120 (44e109e0.0): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 121 (44e109e4.0): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 122 (44e109e8.0): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 123 (44e109ec.0): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 124 (44e109f0.0): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 125 (44e109f4.0): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 126 (44e109f8.0): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 127 (44e109fc.0): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 128 (44e10a00.0): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 129 (44e10a04.0): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 130 (44e10a08.0): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 131 (44e10a0c.0): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 132 (44e10a10.0): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 133 (44e10a14.0): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 134 (44e10a18.0): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 135 (44e10a1c.0): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 136 (44e10a20.0): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 137 (44e10a24.0): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 138 (44e10a28.0): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 139 (44e10a2c.0): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 140 (44e10a30.0): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 141 (44e10a34.0): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+beaglebone% con
+config-pin               connmanctl               continue
+configure_robotics_dt.sh connmand                 convert-dtsv0
+connman                  connmand-wait-online     
+beaglebone% conf
+config-pin               configure_robotics_dt.sh 
+beaglebone% config-pin p9_27
+config-pin [-a] <pin> <mode>
+    Set <pin> to <mode>, configuring pin multiplexing and optionally
+    configuring the gpio.  Valid <mode> strings vary based on <pin>,
+    however all pins have a default and gpio mode.  The default mode is
+    the reset state of the pin, with the pin mux set to gpio, the pull
+    up/down resistor set to it's reset value, and the pin receive buffer
+    enabled.  To setup gpio, the following <mode> strings are all valid:
+
+        gpio : 
+            Set pinmux to gpio, existing direction and value unchanged
+        in | input:
+            Set pinmux to gpio and set gpio direction to input
+        out | output :
+            Set pinmux to gpio and set gpio direction to output
+        hi | high | 1 :
+            Set pinmux to gpio and set gpio direction to output driving high
+        lo | low | 0 :
+            Set pinmux to gpio and set gpio direction to output driving low
+
+    To enable pull-up or pull-down resistors, a suffex may be appended to
+    any of the above gpio modes.  Use + or _pu to enable the pull-up resistor
+    and - or _pd to enable the pull-down resistor.  Examples:
+
+        in+ | in_pu:
+            Enable pull-up resistor and setup pin as per input, above.
+        hi- | hi_pd:
+            Enable pull-down resistor and setup pin as per high, above.
+            While the pull-down resistor will be enabled, it will not do much
+            until application software changes the pin direction to input.
+
+    -a automatically loads missing device tree overlays
+
+config-pin overlay <name>
+    loads the device tree overlay <name>
+
+config-pin -l <pin>
+    list valid <mode> values for <pin>
+
+config-pin -i <pin>
+    show information to <pin>
+
+config-pin -q <pin>
+    query pin and report configuration details
+
+config-pin -f [file]
+    Read list of pin configurations from file, one per line
+    Comments and white-space are allowed
+    With no file, or when file is -, read standard input.
+config-pin -h
+    Display this help text
+
+beaglebone% config-pin p9_27 -q
+Invalid mode: -q
+beaglebone% config-pin p9_27 -q[K[K[1@-[1@q[1@ 
+P9_27 Mode: default Direction: in Value: 0
+beaglebone% config-pin -q p9_27_27[K8_27
+P8_27 pinmux file not found!
+Cannot read pinmux file: /sys/devices/platform/ocp/ocp*P8_27_pinmux/state
+beaglebone% config-pin -q p8_279_27
+P9_27 Mode: default Direction: in Value: 0
+beaglebone% dir
+ADC_001-00A0.dtbo  data1.bin	Makefile  pru1.obj     spidriver_host.c
+ADC_001.dts	   fix_uio.sh*	pru0.c	  pru1.out     spidriver_host.o
+adcdriver_host.c   include/	pru0.map  pru_spi.c    text0.bin
+adcdriver_host.o   LICENSE	pru0.obj  pru_spi.obj  text1.bin
+AM335x_PRU.cmd	   main*	pru0.out  prussdrv.c
+bin.cmd		   main.c	pru1.c	  prussdrv.o
+data0.bin	   main.o	pru1.map  README
+beaglebone% less -X ADC_001
+ADC_001-00A0.dtbo  ADC_001.dts        
+beaglebone% less -X ADC_001.dts 
+/dts-v1/;
+/plugin/;
+
+/ {
+   compatible = "ti,beaglebone", "ti,beaglebone-black";
+
+   part-number = "ADC_001";
+   version = "00A0";
+
+   exclusive-use =
+          "P9.27", 
+          "P9.28",
+          "P9.29",
+          "P9.30",
+          "pru0",
+          "P8.27",
+          "pru1";
+
+   fragment@0 {
+      target = <&am33xx_pinmux>;
+      __overlay__ {
+
+         pru_pru_pins: pinmux_pru_pru_pins {
+[7mADC_001.dts[27m[K[Kbeaglebone% less -X ADC_001.dts[19Ddir[Kless -X ADC_001.dts[19Ddir[Kconfig-pin -q p9_27[K8
+P9_28 pinmux file not found!
+Cannot read pinmux file: /sys/devices/platform/ocp/ocp*P9_28_pinmux/state
+beaglebone% config-pin -q p9_28[K9
+P9_29 pinmux file not found!
+Cannot read pinmux file: /sys/devices/platform/ocp/ocp*P9_29_pinmux/state
+beaglebone% config-pin -q p9_29[K[K[K[K[K[K[K -q p9_28[19Dless -X ADC_001.dts[19Ddir[Kconfig-pin -q p9_278_279_27[8D[3P[5C -q[K[16Dsudo cat /sys/kernel/debug/pinctrl/44e10800.pinmux/pinmux-pins|grep  pru
+beaglebone% sudo cat /sys/kernel/debug/pinctrl/44e10800.pinmux/pinmux-pins | gre p pru[K[K[K27
+pin 27 (44e1086c.0): 48038000.mcasp (GPIO UNCLAIMED) function mcasp0_pins group mcasp0_pins
+pin 105 (44e109a4.0): ocp:P9_27_pinmux (GPIO UNCLAIMED) function pinmux_P9_27_default_pin group pinmux_P9_27_default_pin
+pin 127 (44e109fc.0): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+beaglebone% sudo cat /sys/kernel/debug/pinctrl/44e10800.pinmux/pinmux-pins | gre p 27[K8
+pin 10 (44e10828.0): ocp:P8_14_pinmux (GPIO UNCLAIMED) function pinmux_P8_14_default_pin group pinmux_P8_14_default_pin
+pin 28 (44e10870.0): ocp:P9_11_pinmux (GPIO UNCLAIMED) function pinmux_P9_11_default_pin group pinmux_P9_11_default_pin
+pin 74 (44e10928.0): 4a100000.ethernet (GPIO UNCLAIMED) function cpsw_default group cpsw_default
+pin 128 (44e10a00.0): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+pin 138 (44e10a28.0): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+beaglebone% sudo cat /sys/kernel/debug/pinctrl/44e10800.pinmux/pinmux-pins | gre p 28[A[8C[K[67C p[K[A[12Cdir /dev/u
+ubi_ctrl% uinput%   uio1%     uio3%     uio5%     uio7%     
+uhid%     uio0%     uio2%     uio4%     uio6%     urandom%  
+beaglebone% dir /dev/u[K[K[K[K[K[K[K[K[K^Dlogout
+
+Debian GNU/Linux 9 beaglebone ttyS0
+
+BeagleBoard.org Debian Image 2017-10-10
+
+Support/FAQ: http://elinux.org/Beagleboard:BeagleBoneBlack_Debian
+
+default username:password is [debian:temppwd]
+
+beaglebone login: 
+Thanks for using picocom
+fruitloops% ^Dexit
+
+Script done on Sun 16 Feb 2020 10:15:49 AM EST
