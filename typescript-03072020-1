@@ -1,0 +1,1801 @@
+Script started on Sat 07 Mar 2020 09:15:07 AM EST
+heller has logged on pts/0 from :0 at 28-Feb-2020 14:48.
+heller has logged on pts/1 from :0 at 28-Feb-2020 14:48.
+heller has logged on pts/2 from :0 at 02-Mar-2020 12:50.
+heller has logged on pts/3 from :0 at 02-Mar-2020 12:50.
+heller has logged on pts/4 from :0 at 07-Mar-2020 9:14.
+heller has logged on pts/5 from :0 at 07-Mar-2020 9:14.
+heller has logged on pts/6 from local at 07-Mar-2020 9:15.
+heller has logged on tty1 from local at 28-Feb-2020 14:48.
+gollum.deepsoft.com% slogin clearwater2[22Gless -X RRCircuits/ESP32-PWMHalfSidingSMD/ESP32-PWMHalfSidi ngSMD.csv[3G[4@_Mouser.csv[A[22Ggit status *[K[80G n[K[A[34G[26Gcheckout ESP32-PWMHalfSidingSMD.pro[26Grm --force ESP32-PWMHalfSidingSMD-THDtermsocket.*[22Gcp ESP32-PWMHalfSidingSMD-THDtermsocket.cmp ESP32-PWMHalfSi dingSMD.cmp[A[22Ggit rm --force ESP32-PWMHalfSidingSMD-THDtermsocket.*[K[80G d[K[A[75G[26Gcheckout ESP32-PWMHalfSidingSMD.pro[K[26Gstatus *[K[22Gless -X RRCircuits/ESP32-PWMHalfSidingSMD/ESP32-PWMHalfSidi ng_Mouser.csv[3G[4PSMD.csv[A[22Gslogin clearwater2[K[80G n[K[A[40G[22G[Kmin
+min12xxw            minicom             minirc.dfl          
+minfo               minicom.users       miniterm.py         
+mingetty            minirc._dev_ttyUSB0 miniterm.pyc        
+gollum.deepsoft.com% mini
+minicom             minirc._dev_ttyUSB0 miniterm.py         
+minicom.users       minirc.dfl          miniterm.pyc        
+gollum.deepsoft.com% minic
+minicom       minicom.users 
+gollum.deepsoft.com% minicom /dev/ttyUSB0 
+[!p[?3;4l[4l>[0m(B[?1h=[H[2J[0m(B[7m[33;1H[K[?12l[?25h[?25l                                                                               [?12l[?25h[?12l[?25h[33;34HNOR[1;1H[33;1H[?25l CTRL-A Z for help |115200 8N1 | NOR | Minicom 2.3    | VT102 |      Offline   [33;62H[?12l[?25h[1;1H
+[0m(BWelcome to minicom 2.3
+
+OPTIONS: I18n 
+Compiled on Mar 22 2017, 08:13:25.
+Port /dev/ttyUSB0[7;18H[8;18HPress CTRL-A Z for help on special keys
+
+
+U-Boot SPL 2017.09-00002-g0f3f1c7907 (Oct 09 2017 - 15:30:22)
+Trying to boot from MMC2
+
+
+U-Boot 2017.09-00002-g0f3f1c7907 (Oct 09 2017 - 15:30:22 -0500), Build: jenkins-[15;80Hg[15;80Hi[15;80Ht[15;80Hh[15;80Hu[15;80Hb[15;80H_[15;80HB[15;80Ho[15;80Ho[15;80Ht[15;80Hl[15;80Ho[15;80Ha[15;80Hd[15;80He[15;80Hr[15;80H-[15;80HB[15;80Hu[15;80Hi[15;80Hl[15;80Hd[15;80He[15;80Hr[15;80H-[15;80H6[15;80H0[15;80H7[15;80H
+
+CPU  : AM335X-GP rev 2.1
+I2C:   ready
+DRAM:  512 MiB
+No match for driver 'omap_hsmmc'
+No match for driver 'omap_hsmmc'
+Some drivers were not found
+Reset Source: Power-on reset has occurred.
+MMC:   OMAP SD/MMC: 0, OMAP SD/MMC: 1
+Using default environment
+
+Board: BeagleBone Black
+<ethaddr> not set. Validating first E-fuse MAC
+BeagleBone Black:
+BeagleBone: cape eeprom: i2c_probe: 0x54: /lib/firmware/ADC_001-00A0.dtbo [0x5aa[30;80Hb[30;80He[30;80H6[30;80Hf[30;80H][30;80H
+BeagleBone: cape eeprom: i2c_probe: 0x55:
+BeagleBone: cape eeprom: i2c_probe: 0x56:[1;32r[32;1H
+[1;33r[32;1HBeagleBone: cape eeprom: i2c_probe: 0x57:[1;32r[32;1H
+[1;33r[32;1HNet:   eth0: MII MODE[1;32r[32;1H
+[1;33r[32;1Hcpsw[1;32r[32;1H
+[1;33r[32;1HPress SPACE to abort autoboot in 2 seconds[1;32r[32;1H
+[1;33r[32;1Hboard_name=[A335BNLT] ...[1;32r[32;1H
+[1;33r[32;1Hboard_rev=[000C] ...[1;32r[32;1H
+[1;33r[32;1Hswitch to partitions #0, OK[1;32r[32;1H
+[1;33r[32;1Hmmc0 is current device[1;32r[32;1H
+[1;33r[32;1HSD/MMC found on device 0[1;32r[32;1H
+[1;33r[32;1H** Bad device 0:2 0x82000000 **[1;32r[32;1H
+[1;33r[32;1H** Bad device 0:2 0x82000000 **[1;32r[32;1H
+[1;33r[32;1Hswitch to partitions #0, OK[1;32r[32;1H
+[1;33r[32;1Hmmc0 is current device[1;32r[32;1H
+[1;33r[32;1HScanning mmc 0:1...[1;32r[32;1H
+[1;33r[32;1Hgpio: pin 56 (gpio 56) value is 0[1;32r[32;1H
+[1;33r[32;1Hgpio: pin 55 (gpio 55) value is 0[1;32r[32;1H
+[1;33r[32;1Hgpio: pin 54 (gpio 54) value is 0[1;32r[32;1H
+[1;33r[32;1Hgpio: pin 53 (gpio 53) value is 1[1;32r[32;1H
+[1;33r[32;1Hswitch to partitions #0, OK[1;32r[32;1H
+[1;33r[32;1Hmmc0 is current device[1;32r[32;1H
+[1;33r[32;1Hgpio: pin 54 (gpio 54) value is 1[1;32r[32;1H
+[1;33r[32;1HChecking for: /uEnv.txt ...[1;32r[32;1H
+[1;33r[32;1HChecking for: /boot.scr ...[1;32r[32;1H
+[1;33r[32;1HChecking for: /boot/boot.scr ...[1;32r[32;1H
+[1;33r[32;1HChecking for: /boot/uEnv.txt ...[1;32r[32;1H
+[1;33r[32;1Hgpio: pin 55 (gpio 55) value is 1[1;32r[32;1H
+[1;33r[32;1H2060 bytes read in 82 ms (24.4 KiB/s)[1;32r[32;1H
+[1;33r[32;1HLoaded environment from /boot/uEnv.txt[1;32r[32;1H
+[1;33r[32;1Hdebug: [dtb=am335x-bonegreen.dtb] ...[1;32r[32;1H
+[1;33r[32;1HUsing: dtb=am335x-bonegreen.dtb ...[1;32r[32;1H
+[1;33r[32;1HChecking if uname_r is set in /boot/uEnv.txt...[1;32r[32;1H
+[1;33r[32;1Hgpio: pin 56 (gpio 56) value is 1[1;32r[32;1H
+[1;33r[32;1HRunning uname_boot ...[1;32r[32;1H
+[1;33r[32;1Hloading /boot/vmlinuz-4.4.91-ti-r133 ...[1;32r[32;1H
+[1;33r[32;1H8886912 bytes read in 626 ms (13.5 MiB/s)[1;32r[32;1H
+[1;33r[32;1Huboot_overlays: dtb=am335x-bonegreen.dtb in /boot/uEnv.txt, unable to use [uboot[32;80H_[32;80Hb[32;80Ha[32;80Hs[32;80He[32;80H_[32;80Hd[32;80Ht[32;80Hb[32;80H=[32;80Ha[32;80Hm[32;80H3[32;80H3[32;80H5[32;80Hx[32;80H-[32;80Hb[32;80Ho[32;80Hn[32;80He[32;80Hb[32;80Hl[32;80Ha[32;80Hc[32;80Hk[32;80H-[32;80Hu[32;80Hb[32;80Ho[32;80Ho[32;80Ht[32;80H.[32;80Hd[32;80Ht[32;80Hb[32;80H][32;80H [32;80H.[32;80H.[32;80H.[32;80H[1;32r[32;1H
+[1;33r[32;1Hloading /boot/dtbs/4.4.91-ti-r133/am335x-bonegreen.dtb ...[1;32r[32;1H
+[1;33r[32;1H53391 bytes read in 500 ms (103.5 KiB/s)[1;32r[32;1H
+[1;33r[32;1Huboot_overlays: [fdt_buffer=0x60000] ...[1;32r[32;1H
+[1;33r[32;1Huboot_overlays: loading /lib/firmware/AM335X-20-00A0.dtbo ...[1;32r[32;1H
+[1;33r[32;1H378 bytes read in 567 ms (0 Bytes/s)[1;32r[32;1H
+[1;33r[32;1Huboot_overlays: loading /lib/firmware/ADC_001-00A0.dtbo ...[1;32r[32;1H
+[1;33r[32;1H894 bytes read in 828 ms (1000 Bytes/s)[1;32r[32;1H
+[1;33r[32;1Huboot_overlays: loading /lib/firmware/BB-BONE-eMMC1-01-00A0.dtbo ...[1;32r[32;1H
+[1;33r[32;1H1105 bytes read in 250 ms (3.9 KiB/s)[1;32r[32;1H
+[1;33r[32;1Huboot_overlays: uboot loading of [/lib/firmware/BB-HDMI-TDA998x-00A0.dtbo] disab[32;80Hl[32;80He[32;80Hd[32;80H [32;80Hb[32;80Hy[32;80H [32;80H/[32;80Hb[32;80Ho[32;80Ho[32;80Ht[32;80H/[32;80Hu[32;80HE[32;80Hn[32;80Hv[32;80H.[32;80Ht[32;80Hx[32;80Ht[32;80H [32;80H[[32;80Hd[32;80Hi[32;80Hs[32;80Ha[32;80Hb[32;80Hl[32;80He[32;80H_[32;80Hu[32;80Hb[32;80Ho[32;80Ho[32;80Ht[32;80H_[32;80Ho[32;80Hv[32;80He[32;80Hr[32;80Hl[32;80Ha[32;80Hy[32;80H_[32;80Hv[32;80Hi[32;80Hd[32;80He[32;80Ho[32;80H=[32;80H1[32;80H][32;80H.[32;80H.[32;80H.[32;80H[1;32r[32;1H
+[1;33r[32;1Huboot_overlays: uboot loading of [/lib/firmware/BB-ADC-00A0.dtbo] disabled by /b[32;80Ho[32;80Ho[32;80Ht[32;80H/[32;80Hu[32;80HE[32;80Hn[32;80Hv[32;80H.[32;80Ht[32;80Hx[32;80Ht[32;80H [32;80H[[32;80Hd[32;80Hi[32;80Hs[32;80Ha[32;80Hb[32;80Hl[32;80He[32;80H_[32;80Hu[32;80Hb[32;80Ho[32;80Ho[32;80Ht[32;80H_[32;80Ho[32;80Hv[32;80He[32;80Hr[32;80Hl[32;80Ha[32;80Hy[32;80H_[32;80Ha[32;80Hd[32;80Hc[32;80H=[32;80H1[32;80H][32;80H.[32;80H.[32;80H.[32;80H[1;32r[32;1H
+[1;33r[32;1Huboot_overlays: loading /lib/firmware/AM335X-PRU-UIO-00A0.dtbo ...[1;32r[32;1H
+[1;33r[32;1H853 bytes read in 978 ms (0 Bytes/s)[1;32r[32;1H
+[1;33r[32;1Huboot_overlays: cape universal disabled, external cape enabled or detected...[1;32r[32;1H
+[1;33r[32;1Hloading /boot/initrd.img-4.4.91-ti-r133 ...[1;32r[32;1H
+[1;33r[32;1H5416133 bytes read in 411 ms (12.6 MiB/s)[1;32r[32;1H
+[1;33r[32;1Hdebug: [console=ttyO0,115200n8 bone_capemgr.uboot_capemgr_enabled=1 root=/dev/mm[32;80Hc[32;80Hb[32;80Hl[32;80Hk[32;80H0[32;80Hp[32;80H1[32;80H [32;80Hr[32;80Ho[32;80H [32;80Hr[32;80Ho[32;80Ho[32;80Ht[32;80Hf[32;80Hs[32;80Ht[32;80Hy[32;80Hp[32;80He[32;80H=[32;80He[32;80Hx[32;80Ht[32;80H4[32;80H [32;80Hr[32;80Ho[32;80Ho[32;80Ht[32;80Hw[32;80Ha[32;80Hi[32;80Ht[32;80H [32;80Hc[32;80Ho[32;80Hh[32;80He[32;80Hr[32;80He[32;80Hn[32;80Ht[32;80H_[32;80Hp[32;80Ho[32;80Ho[32;80Hl[32;80H=[32;80H1[32;80HM[32;80H [32;80Hn[32;80He[32;80Ht[32;80H.[32;80Hi[32;80Hf[32;80Hn[32;80Ha[32;80Hm[32;80He[32;80Hs[32;80H=[32;80H0[32;80H [32;80Hq[32;80Hu[32;80Hi[32;80He[32;80Ht[32;80H][32;80H [32;80H.[32;80H.[32;80H.[32;80H[1;32r[32;1H
+[1;33r[32;1Hdebug: [bootz 0x82000000 0x88080000:52a4c5 88000000] ...[1;32r[32;1H
+[1;33r[32;1H## Flattened Device Tree blob at 88000000[1;32r[32;1H
+[1;33r[32;1H   Booting using the fdt blob at 0x88000000[1;32r[32;1H
+[1;33r[32;1H   Loading Ramdisk to 8fad5000, end 8ffff4c5 ... OK[1;32r[32;1H
+[1;33r[32;1H   reserving fdt memory region: addr=88000000 size=6e000[1;32r[32;1H
+[1;33r[32;1H   Loading Device Tree to 8fa64000, end 8fad4fff ... OK[1;32r[32;1H
+[1;33r[32;1H[1;32r[32;1H
+[1;33r[32;1HStarting kernel ...[1;32r[32;1H
+[1;33r[32;1H[1;32r[32;1H
+[1;33r[32;1H[    0.000791] clocksource_probe: no matching clocksources found[1;32r[32;1H
+[1;33r[32;1H[    2.069892] wkup_m3_ipc 44e11324.wkup_m3_ipc: could not get rproc handle[1;32r[32;1H
+[1;33r[32;1H[    2.272378] omap_voltage_late_init: Voltage driver support not added[1;32r[32;1H
+[1;33r[32;1H[    2.280237] PM: Cannot get wkup_m3_ipc handle[1;32r[32;1H
+[1;33r[32;1H[1;32r[32;1H
+[1;33r[32;1HDebian GNU/Linux 9 beaglebone ttyS0[1;32r[32;1H
+[1;33r[32;1H[1;32r[32;1H
+[1;33r[32;1HBeagleBoard.org Debian Image 2017-10-10[1;32r[32;1H
+[1;33r[32;1H[1;32r[32;1H
+[1;33r[32;1HSupport/FAQ: http://elinux.org/Beagleboard:BeagleBoneBlack_Debian[1;32r[32;1H
+[1;33r[32;1H[1;32r[32;1H
+[1;33r[32;1Hdefault username:password is [debian:temppwd][1;32r[32;1H
+[1;33r[32;1H[1;32r[32;1H
+[1;33r[32;1Hbeaglebone login: [1;32r[32;1H
+[1;33r[32;1HDebian GNU/Linux 9 beaglebone ttyS0[1;32r[32;1H
+[1;33r[32;1H[1;32r[32;1H
+[1;33r[32;1HBeagleBoard.org Debian Image 2017-10-10[1;32r[32;1H
+[1;33r[32;1H[1;32r[32;1H
+[1;33r[32;1HSupport/FAQ: http://elinux.org/Beagleboard:BeagleBoneBlack_Debian[1;32r[32;1H
+[1;33r[32;1H[1;32r[32;1H
+[1;33r[32;1Hdefault username:password is [debian:temppwd][1;32r[32;1H
+[1;33r[32;1H[1;32r[32;1H
+[1;33r[32;1Hbeaglebone login: heller[1;32r[32;1H
+[1;33r[32;1HPassword: [1;32r[32;1H
+[1;33r[32;1HLast login: Sun Mar  1 20:57:21 UTC 2020 on ttyS0[1;32r[32;1H
+[1;33r[32;1HLinux beaglebone 4.4.91-ti-r133 #1 SMP Tue Oct 10 05:18:08 UTC 2017 armv7l[1;32r[32;1H
+[1;33r[32;1H[1;32r[32;1H
+[1;33r[32;1HThe programs included with the Debian GNU/Linux system are free software;[1;32r[32;1H
+[1;33r[32;1Hthe exact distribution terms for each program are described in the[1;32r[32;1H
+[1;33r[32;1Hindividual files in /usr/share/doc/*/copyright.[1;32r[32;1H
+[1;33r[32;1H[1;32r[32;1H
+[1;33r[32;1HDebian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent[1;32r[32;1H
+[1;33r[32;1Hpermitted by applicable law.[1;32r[32;1H
+[1;33r[32;1Hmail: Command not found.[1;32r[32;1H
+[1;33r[32;1Hheller has logged on ttyS0 from local at 07-Mar-2020 14:16.[1;32r[32;1H
+[1;33r[32;1Hbeaglebone% chd ADC_001Project/[1;32r[32;1H
+[1;33r[32;1H~/ADC_001Project ~ [1;32r[32;1H
+[1;33r[32;1Hbeaglebone% ^Dlogout[1;32r[32;1H
+[1;33r[32;1H[1;32r[32;1H
+[1;33r[32;1HDebian GNU/Linux 9 beaglebone ttyS0[1;32r[32;1H
+[1;33r[32;1H[1;32r[32;1H
+[1;33r[32;1HBeagleBoard.org Debian Image 2017-10-10[1;32r[32;1H
+[1;33r[32;1H[1;32r[32;1H
+[1;33r[32;1HSupport/FAQ: http://elinux.org/Beagleboard:BeagleBoneBlack_Debian[1;32r[32;1H
+[1;33r[32;1H[1;32r[32;1H
+[1;33r[32;1Hdefault username:password is [debian:temppwd][1;32r[32;1H
+[1;33r[32;1H[1;32r[32;1H
+[1;33r[32;1Hbeaglebone login: [8;30H[?25l+----------------------+[9;30H| Leave without reset? |[10;30H|               No     |[11;30H+----------------------+[10;51H[?25l[10;33H[0m(B[7m   Yes  [?12l[?25h[8;1H[0m(BPassword:                                            [9;1HLast login: Sun Mar  1 20:57:21 UTC 2020 on ttyS0    [10;1HLinux beaglebone 4.4.91-ti-r133 #1 SMP Tue Oct 10 05:[11;1H                                                     [32;19H[?12l[?25h[?12l[?25h[H[2J[?12l[?25h[?1l>[!p[?3;4l[4l>gollum.deepsoft.com% spe
+speaker-test spectool     spell        spent        
+gollum.deepsoft.com% speaker-test -f 440 -t sine -P 5
+
+speaker-test 
+
+Playback device is default
+Stream parameters are 48000Hz, S16_LE, 1 channels
+Sine wave rate is 440.0000Hz
+Rate set to 48000Hz (requested 48000Hz)
+Buffer size range from 192 to 2097152
+Period size range from 64 to 699051
+Using max buffer size 2097150
+Periods = 5
+was set period_size = 419430
+was set buffer_size = 2097150
+ 0 - Front Left
+Time per period = 10.812513
+ 0 - Front Left
+Time per period = 10.846384
+ 0 - Front Left
+Time per period = 10.849316
+ 0 - Front Left
+Time per period = 10.827765
+ 0 - Front Left
+Time per period = 10.835921
+ 0 - Front Left
+Time per period = 10.792615
+ 0 - Front Left
+Time per period = 10.833799
+ 0 - Front Left
+Time per period = 10.836126
+ 0 - Front Left
+Time per period = 10.831984
+ 0 - Front Left
+Time per period = 10.791690
+ 0 - Front Left
+Time per period = 10.835926
+ 0 - Front Left
+Time per period = 10.834163
+ 0 - Front Left
+Time per period = 10.832798
+ 0 - Front Left
+Time per period = 10.839027
+ 0 - Front Left
+Time per period = 10.823678
+ 0 - Front Left
+Time per period = 10.841639
+ 0 - Front Left
+^C^C^C^CTime per period = 10.791960
+gollum.deepsoft.com% speaker-test -f 440 -t sine -P 5[P[P[1@8[1@8
+
+speaker-test 
+
+Playback device is default
+Stream parameters are 48000Hz, S16_LE, 1 channels
+Sine wave rate is 880.0000Hz
+Rate set to 48000Hz (requested 48000Hz)
+Buffer size range from 192 to 2097152
+Period size range from 64 to 699051
+Using max buffer size 2097150
+Periods = 5
+was set period_size = 419430
+was set buffer_size = 2097150
+ 0 - Front Left
+Time per period = 10.776940
+ 0 - Front Left
+^CTime per period = 10.832740
+gollum.deepsoft.com% speaker-test -f 880 -t sine -P 5[P[P[1@2[1@2
+
+speaker-test 
+
+Playback device is default
+Stream parameters are 48000Hz, S16_LE, 1 channels
+Sine wave rate is 220.0000Hz
+Rate set to 48000Hz (requested 48000Hz)
+Buffer size range from 192 to 2097152
+Period size range from 64 to 699051
+Using max buffer size 2097150
+Periods = 5
+was set period_size = 419430
+was set buffer_size = 2097150
+ 0 - Front Left
+Time per period = 10.842734
+ 0 - Front Left
+^CTime per period = 10.833202
+gollum.deepsoft.com% 
+[Kgollum.deepsoft.com% 
+[Kgollum.deepsoft.com% speaker-test -f 220 -t sine -P 5[K[K[K[K[K[K[K[K[K[K[K[K[K[K
+
+speaker-test 
+
+Playback device is default
+Stream parameters are 48000Hz, S16_LE, 1 channels
+Using 16 octaves of pink noise
+Rate set to 48000Hz (requested 48000Hz)
+Buffer size range from 192 to 2097152
+Period size range from 64 to 699051
+Using max buffer size 2097152
+Periods = 4
+was set period_size = 524288
+was set buffer_size = 2097152
+ 0 - Front Left
+Time per period = 12.956930
+ 0 - Front Left
+Time per period = 12.963592
+ 0 - Front Left
+Time per period = 13.003017
+ 0 - Front Left
+^C^C^C^CTime per period = 13.008561
+gollum.deepsoft.com% man rsync
+[?1049h[?1h=rsync(1)                                                              rsync(1)
+
+[1mNAME[0m
+       rsync — a fast, versatile, remote (and local) file-copying tool
+
+[1mSYNOPSIS[0m
+       Local:  rsync [OPTION...] SRC... [DEST]
+
+       Access via remote shell:
+         Pull: rsync [OPTION...] [USER@]HOST:SRC... [DEST]
+         Push: rsync [OPTION...] SRC... [USER@]HOST:DEST
+
+       Access via rsync daemon:
+         Pull: rsync [OPTION...] [USER@]HOST::SRC... [DEST]
+               rsync [OPTION...] rsync://[USER@]HOST[:PORT]/SRC... [DEST]
+         Push: rsync [OPTION...] SRC... [USER@]HOST::DEST
+               rsync [OPTION...] SRC... rsync://[USER@]HOST[:PORT]/DEST
+
+       Usages with just one SRC arg and no DEST arg will list the source files
+       instead of copying.
+
+[1mDESCRIPTION[0m
+       Rsync is a fast and extraordinarily versatile file  copying  tool.   It
+       can  copy  locally,  to/from  another  host  over  any remote shell, or
+       to/from a remote rsync daemon.  It offers a  large  number  of  options
+       that  control  every  aspect  of  its behavior and permit very flexible
+       specification of the set of files to be copied.  It is famous  for  its
+       delta-transfer  algorithm,  which  reduces the amount of data sent over
+       the network by sending only the differences between  the  source  files
+       and  the  existing  files in the destination.  Rsync is widely used for
+       backups and mirroring and as an improved copy command for everyday use.
+
+:[K[K       Rsync  finds  files  that  need to be transferred using a “quick check”
+       algorithm (by default) that looks for files that have changed  in  size
+       or   in  last-modified  time.   Any  changes  in  the  other  preserved
+       attributes (as requested by options) are made on the  destination  file
+       directly  when  the quick check indicates that the file’s data does not
+       need to be updated.
+
+       Some of the additional features of rsync are:
+
+       o      support for copying links, devices, owners, groups, and  permis-
+              sions
+
+       o      exclude and exclude-from options similar to GNU tar
+
+       o      a  CVS  exclude  mode for ignoring the same files that CVS would
+              ignore
+
+       o      can use any transparent remote shell, including ssh or rsh
+
+       o      does not require super-user privileges
+
+       o      pipelining of file transfers to minimize latency costs
+
+       o      support for anonymous or authenticated rsync daemons (ideal  for
+              mirroring)
+
+[1mGENERAL[0m
+       Rsync  copies  files either to or from a remote host, or locally on the
+       current host (it does not support  copying  files  between  two  remote
+       hosts).
+
+       There  are  two  different  ways  for rsync to contact a remote system:
+:[K[K       using a remote-shell program as the transport (such as ssh or  rsh)  or
+       contacting  an  rsync daemon directly via TCP.  The remote-shell trans-
+       port is used whenever the source or destination path contains a  single
+       colon  (:)  separator  after a host specification.  Contacting an rsync
+       daemon directly happens when the source or destination path contains  a
+       double  colon  (::)  separator  after  a host specification, OR when an
+       rsync:// URL is specified (see also the  “USING  RSYNC-DAEMON  FEATURES
+       VIA  A REMOTE-SHELL CONNECTION” section for an exception to this latter
+       rule).
+
+       As a special case, if a single source arg is specified without a desti-
+       nation, the files are listed in an output format similar to “ls -l”.
+
+       As expected, if neither the source or destination path specify a remote
+       host, the copy occurs locally (see also the [1m--list-only[0m option).
+
+       Rsync refers to the local side as the “client” and the remote  side  as
+       the  “server”.   Don’t confuse “server” with an rsync daemon — a daemon
+       is always a server, but a server can be either a daemon  or  a  remote-
+       shell spawned process.
+
+[1mSETUP[0m
+       See the file README for installation instructions.
+
+       Once  installed,  you  can use rsync to any machine that you can access
+       via a remote shell (as well as some that you can access using the rsync
+       daemon-mode  protocol).   For remote transfers, a modern rsync uses ssh
+       for its communications, but it may have been configured to use  a  dif-
+       ferent remote shell by default, such as rsh or remsh.
+
+       You  can also specify any remote shell you like, either by using the [1m-e[0m
+       command line option, or by setting the RSYNC_RSH environment  variable.
+:[K[K
+       Note  that  rsync  must be installed on both the source and destination
+       machines.
+
+[1mUSAGE[0m
+       You use rsync in the same way you use rcp. You must  specify  a  source
+       and a destination, one of which may be remote.
+
+       Perhaps the best way to explain the syntax is with some examples:
+
+              rsync -t *.c foo:src/
+
+       This would transfer all files matching the pattern *.c from the current
+       directory to the directory src on the machine foo. If any of the  files
+       already  exist on the remote system then the rsync remote-update proto-
+       col is used to update the file by sending only the differences. See the
+       tech report for details.
+
+              rsync -avz foo:src/bar /data/tmp
+
+       This would recursively transfer all files from the directory src/bar on
+       the machine foo into the /data/tmp/bar directory on the local  machine.
+       The  files  are  transferred in “archive” mode, which ensures that sym-
+       bolic links, devices, attributes,  permissions,  ownerships,  etc.  are
+       preserved  in  the transfer.  Additionally, compression will be used to
+       reduce the size of data portions of the transfer.
+
+              rsync -avz foo:src/bar/ /data/tmp
+
+       A trailing slash on the source changes this behavior to avoid  creating
+       an  additional  directory level at the destination.  You can think of a
+       trailing / on a source as meaning “copy the contents of this directory”
+:[K[K       as  opposed  to  “copy  the  directory  by name”, but in both cases the
+       attributes of the containing directory are transferred to the  contain-
+       ing  directory on the destination.  In other words, each of the follow-
+       ing commands copies the files in the same way, including their  setting
+       of the attributes of /dest/foo:
+
+              rsync -av /src/foo /dest
+              rsync -av /src/foo/ /dest/foo
+
+       Note  also  that  host  and  module references don’t require a trailing
+       slash to copy the contents of the default directory.  For example, both
+       of these copy the remote directory’s contents into “/dest”:
+
+              rsync -av host: /dest
+              rsync -av host::module /dest
+
+       You  can  also  use rsync in local-only mode, where both the source and
+       destination don’t have a ‘:’ in the name. In this case it behaves  like
+       an improved copy command.
+
+       Finally,  you can list all the (listable) modules available from a par-
+       ticular rsync daemon by leaving off the module name:
+
+              rsync somehost.mydomain.com::
+
+       See the following section for more details.
+
+[1mADVANCED[0m [1mUSAGE[0m
+       The syntax for requesting multiple files from a remote host is done  by
+       specifying  additional remote-host args in the same style as the first,
+       or with the hostname omitted.  For instance, all these work:
+
+:[K[K              rsync -av host:file1 :file2 host:file{3,4} /dest/
+              rsync -av host::modname/file{1,2} host::modname/file3 /dest/
+              rsync -av host::modname/file1 ::modname/file{3,4}
+
+       Older versions of rsync required using quoted spaces in the  SRC,  like
+       these examples:
+
+              rsync -av host:’dir1/file1 dir2/file2’ /dest
+              rsync host::’modname/dir1/file1 modname/dir2/file2’ /dest
+
+       This  word-splitting  still works (by default) in the latest rsync, but
+       is not as easy to use as the first method.
+
+       If you need to transfer a filename that contains  whitespace,  you  can
+       either specify the [1m--protect-args[0m ([1m-s[0m) option, or you’ll need to escape
+       the whitespace in a way that the remote  shell  will  understand.   For
+       instance:
+
+              rsync -av host:’file\ name\ with\ spaces’ /dest
+
+[1mCONNECTING[0m [1mTO[0m [1mAN[0m [1mRSYNC[0m [1mDAEMON[0m
+       It  is  also possible to use rsync without a remote shell as the trans-
+       port.  In this case you will directly connect to a remote rsync daemon,
+       typically  using  TCP port 873.  (This obviously requires the daemon to
+       be running on the remote system, so refer to the STARTING AN RSYNC DAE-
+       MON TO ACCEPT CONNECTIONS section below for information on that.)
+
+       Using  rsync  in  this  way is the same as using it with a remote shell
+       except that:
+
+       o      you either use a double colon :: instead of a  single  colon  to
+              separate the hostname from the path, or you use an rsync:// URL.
+:[K[K
+       o      the first word of the “path” is actually a module name.
+
+       o      the remote daemon may print a message of the day when  you  con-
+              nect.
+
+       o      if  you  specify no path name on the remote daemon then the list
+              of accessible paths on the daemon will be shown.
+
+       o      if you specify no local destination then a listing of the speci-
+              fied files on the remote daemon is provided.
+
+       o      you must not specify the [1m--rsh[0m ([1m-e[0m) option.
+
+       An example that copies all the files in a remote module named “src”:
+
+           rsync -av host::src /dest
+
+       Some  modules  on  the remote daemon may require authentication. If so,
+       you will receive a password prompt when you connect. You can avoid  the
+       password  prompt  by setting the environment variable RSYNC_PASSWORD to
+       the password you want to use or using the [1m--password-file[0m option.  This
+       may be useful when scripting rsync.
+
+       WARNING:  On  some  systems  environment  variables  are visible to all
+       users. On those systems using [1m--password-file[0m is recommended.
+
+       You may establish the connection via a web proxy by setting  the  envi-
+       ronment  variable  RSYNC_PROXY to a hostname:port pair pointing to your
+       web proxy.  Note that your web proxy’s configuration must support proxy
+       connections to port 873.
+
+:[K[K       You  may  also establish a daemon connection using a program as a proxy
+       by setting the environment variable RSYNC_CONNECT_PROG to the  commands
+       you  wish  to  run  in place of making a direct socket connection.  The
+       string may contain the escape “%H” to represent the hostname  specified
+       in  the  rsync  command  (so  use “%%” if you need a single “%” in your
+       string).  For example:
+
+         export RSYNC_CONNECT_PROG=’ssh proxyhost nc %H 873’
+         rsync -av targethost1::module/src/ /dest/
+         rsync -av rsync:://targethost2/module/src/ /dest/
+
+       The command specified above uses ssh to run nc (netcat) on a proxyhost,
+       which  forwards all data to port 873 (the rsync daemon) on the targeth-
+       ost (%H).
+
+[1mUSING[0m [1mRSYNC-DAEMON[0m [1mFEATURES[0m [1mVIA[0m [1mA[0m [1mREMOTE-SHELL[0m [1mCONNECTION[0m
+       It is sometimes useful to use various features of an rsync daemon (such
+       as  named modules) without actually allowing any new socket connections
+       into a system (other than what is already  required  to  allow  remote-
+       shell  access).   Rsync  supports  connecting  to a host using a remote
+       shell and then spawning a single-use “daemon” server  that  expects  to
+       read  its  config file in the home dir of the remote user.  This can be
+       useful if you want to encrypt a daemon-style transfer’s data, but since
+       the  daemon is started up fresh by the remote user, you may not be able
+       to use features such as chroot or change the uid used  by  the  daemon.
+       (For  another  way  to encrypt a daemon transfer, consider using ssh to
+       tunnel a local port to a remote machine and configure  a  normal  rsync
+       daemon on that remote host to only allow connections from “localhost”.)
+
+       From the user’s perspective, a daemon transfer via a remote-shell  con-
+       nection uses nearly the same command-line syntax as a normal rsync-dae-
+       mon transfer, with the only exception being that  you  must  explicitly
+:[K[K       set the remote shell program on the command-line with the [1m--rsh=COMMAND[0m
+       option.  (Setting the RSYNC_RSH in the environment  will  not  turn  on
+       this functionality.)  For example:
+
+           rsync -av --rsh=ssh host::module /dest
+
+       If you need to specify a different remote-shell user, keep in mind that
+       the user@ prefix in front of the  host  is  specifying  the  rsync-user
+       value  (for  a  module  that requires user-based authentication).  This
+       means that you must give the ’-l user’ option to  ssh  when  specifying
+       the remote-shell, as in this example that uses the short version of the
+       [1m--rsh[0m option:
+
+           rsync -av -e "ssh -l ssh-user" rsync-user@host::module /dest
+
+       The “ssh-user” will be used at the ssh level; the “rsync-user” will  be
+       used to log-in to the “module”.
+
+[1mSTARTING[0m [1mAN[0m [1mRSYNC[0m [1mDAEMON[0m [1mTO[0m [1mACCEPT[0m [1mCONNECTIONS[0m
+       In order to connect to an rsync daemon, the remote system needs to have
+       a daemon already running (or it needs to have configured something like
+       inetd to spawn an rsync daemon for incoming connections on a particular
+       port).  For full information on how to start a daemon  that  will  han-
+       dling  incoming  socket  connections, see the [1mrsyncd.conf[0m(5) man page —
+       that is the config file for  the  daemon,  and  it  contains  the  full
+       details for how to run the daemon (including stand-alone and inetd con-
+       figurations).
+
+       If you’re using one of the remote-shell transports  for  the  transfer,
+       there is no need to manually start an rsync daemon.
+
+[1mEXAMPLES[0m
+:[K[K       Here are some examples of how I use rsync.
+
+       To  backup  my  wife’s  home directory, which consists of large MS Word
+       files and mail folders, I use a cron job that runs
+
+              rsync -Cavz . arvidsjaur:backup
+
+       each night over a PPP connection to a duplicate directory on my machine
+       “arvidsjaur”.
+
+       To  synchronize my samba source trees I use the following Makefile tar-
+       gets:
+
+           get:
+                   rsync -avuzb --exclude ’*~’ samba:samba/ .
+           put:
+                   rsync -Cavuzb . samba:samba/
+           sync: get put
+
+       this allows me to sync with a CVS directory at the  other  end  of  the
+       connection. I then do CVS operations on the remote machine, which saves
+       a lot of time as the remote CVS protocol isn’t very efficient.
+
+       I mirror a directory between my “old” and “new” ftp sites with the com-
+       mand:
+
+       rsync -az -e ssh --delete ~ftp/pub/samba nimbus:"~ftp/pub/tridge"
+
+       This is launched from cron every few hours.
+
+[1mOPTIONS[0m [1mSUMMARY[0m
+       Here is a short summary of the options available in rsync. Please refer
+:[K[K       to the detailed description below for a complete description.
+
+        -v, --verbose               increase verbosity
+        -q, --quiet                 suppress non-error messages
+            --no-motd               suppress daemon-mode MOTD (see caveat)
+        -c, --checksum              skip based on checksum, not mod-time & size
+        -a, --archive               archive mode; equals -rlptgoD (no -H,-A,-X)
+            --no-OPTION             turn off an implied OPTION (e.g. --no-D)
+        -r, --recursive             recurse into directories
+        -R, --relative              use relative path names
+            --no-implied-dirs       don’t send implied dirs with --relative
+        -b, --backup                make backups (see --suffix & --backup-dir)
+            --backup-dir=DIR        make backups into hierarchy based in DIR
+            --suffix=SUFFIX         backup suffix (default ~ w/o --backup-dir)
+        -u, --update                skip files that are newer on the receiver
+            --inplace               update destination files in-place
+            --append                append data onto shorter files
+            --append-verify         --append w/old data in file checksum
+        -d, --dirs                  transfer directories without recursing
+        -l, --links                 copy symlinks as symlinks
+        -L, --copy-links            transform symlink into referent file/dir
+            --copy-unsafe-links     only "unsafe" symlinks are transformed
+            --safe-links            ignore symlinks that point outside the tree
+        -k, --copy-dirlinks         transform symlink to dir into referent dir
+        -K, --keep-dirlinks         treat symlinked dir on receiver as dir
+        -H, --hard-links            preserve hard links
+        -p, --perms                 preserve permissions
+        -E, --executability         preserve executability
+            --chmod=CHMOD           affect file and/or directory permissions
+        -A, --acls                  preserve ACLs (implies -p)
+        -X, --xattrs                preserve extended attributes
+        -o, --owner                 preserve owner (super-user only)
+:[K[K        -g, --group                 preserve group
+:[K[K            --devices               preserve device files (super-user only)
+:[K[K            --specials              preserve special files
+:[K[K        -D                          same as --devices --specials
+:[K[K        -t, --times                 preserve modification times
+:[K[K        -O, --omit-dir-times        omit directories from --times
+            --super                 receiver attempts super-user activities
+            --fake-super            store/recover privileged attrs using xattrs
+        -S, --sparse                handle sparse files efficiently
+        -n, --dry-run               perform a trial run with no changes made
+        -W, --whole-file            copy files whole (w/o delta-xfer algorithm)
+        -x, --one-file-system       don’t cross filesystem boundaries
+        -B, --block-size=SIZE       force a fixed checksum block-size
+        -e, --rsh=COMMAND           specify the remote shell to use
+            --rsync-path=PROGRAM    specify the rsync to run on remote machine
+            --existing              skip creating new files on receiver
+            --ignore-existing       skip updating files that exist on receiver
+            --remove-source-files   sender removes synchronized files (non-dir)
+            --del                   an alias for --delete-during
+            --delete                delete extraneous files from dest dirs
+            --delete-before         receiver deletes before transfer (default)
+            --delete-during         receiver deletes during xfer, not before
+            --delete-delay          find deletions during, delete after
+            --delete-after          receiver deletes after transfer, not before
+            --delete-excluded       also delete excluded files from dest dirs
+            --ignore-errors         delete even if there are I/O errors
+            --force                 force deletion of dirs even if not empty
+            --max-delete=NUM        don’t delete more than NUM files
+            --max-size=SIZE         don’t transfer any file larger than SIZE
+            --min-size=SIZE         don’t transfer any file smaller than SIZE
+            --partial               keep partially transferred files
+            --partial-dir=DIR       put a partially transferred file into DIR
+            --delay-updates         put all updated files into place at end
+        -m, --prune-empty-dirs      prune empty directory chains from file-list
+            --numeric-ids           don’t map uid/gid values by user/group name
+            --timeout=SECONDS       set I/O timeout in seconds
+            --contimeout=SECONDS    set daemon connection timeout in seconds
+:[K[K        -I, --ignore-times          don’t skip files that match size and time
+            --size-only             skip files that match in size
+            --modify-window=NUM     compare mod-times with reduced accuracy
+        -T, --temp-dir=DIR          create temporary files in directory DIR
+        -y, --fuzzy                 find similar file for basis if no dest file
+            --compare-dest=DIR      also compare received files relative to DIR
+            --copy-dest=DIR         ... and include copies of unchanged files
+            --link-dest=DIR         hardlink to files in DIR when unchanged
+        -z, --compress              compress file data during the transfer
+            --compress-level=NUM    explicitly set compression level
+            --skip-compress=LIST    skip compressing files with suffix in LIST
+        -C, --cvs-exclude           auto-ignore files in the same way CVS does
+        -f, --filter=RULE           add a file-filtering RULE
+        -F                          same as --filter=’dir-merge /.rsync-filter’
+                                    repeated: --filter=’- .rsync-filter’
+            --exclude=PATTERN       exclude files matching PATTERN
+            --exclude-from=FILE     read exclude patterns from FILE
+            --include=PATTERN       don’t exclude files matching PATTERN
+            --include-from=FILE     read include patterns from FILE
+            --files-from=FILE       read list of source-file names from FILE
+        -0, --from0                 all *from/filter files are delimited by 0s
+        -s, --protect-args          no space-splitting; wildcard chars only
+            --address=ADDRESS       bind address for outgoing socket to daemon
+            --port=PORT             specify double-colon alternate port number
+            --sockopts=OPTIONS      specify custom TCP options
+            --blocking-io           use blocking I/O for the remote shell
+            --stats                 give some file-transfer stats
+        -8, --8-bit-output          leave high-bit chars unescaped in output
+        -h, --human-readable        output numbers in a human-readable format
+            --progress              show progress during transfer
+        -P                          same as --partial --progress
+        -i, --itemize-changes       output a change-summary for all updates
+:[K[K            --out-format=FORMAT     output updates using the specified FORMAT
+            --log-file=FILE         log what we’re doing to the specified FILE
+            --log-file-format=FMT   log updates using the specified FMT
+            --password-file=FILE    read daemon-access password from FILE
+            --list-only             list the files instead of copying them
+            --bwlimit=KBPS          limit I/O bandwidth; KBytes per second
+            --write-batch=FILE      write a batched update to FILE
+            --only-write-batch=FILE like --write-batch but w/o updating dest
+            --read-batch=FILE       read a batched update from FILE
+            --protocol=NUM          force an older protocol version to be used
+            --iconv=CONVERT_SPEC    request charset conversion of filenames
+            --checksum-seed=NUM     set block/file checksum seed (advanced)
+        -4, --ipv4                  prefer IPv4
+        -6, --ipv6                  prefer IPv6
+            --version               print version number
+       (-h) --help                  show this help (see below for -h comment)
+
+       Rsync can also be run as a daemon, in which case the following  options
+       are accepted:
+
+            --daemon                run as an rsync daemon
+            --address=ADDRESS       bind to the specified address
+            --bwlimit=KBPS          limit I/O bandwidth; KBytes per second
+            --config=FILE           specify alternate rsyncd.conf file
+            --no-detach             do not detach from the parent
+            --port=PORT             listen on alternate port number
+            --log-file=FILE         override the "log file" setting
+            --log-file-format=FMT   override the "log format" setting
+            --sockopts=OPTIONS      specify custom TCP options
+        -v, --verbose               increase verbosity
+        -4, --ipv4                  prefer IPv4
+        -6, --ipv6                  prefer IPv6
+:[K[K        -h, --help                  show this help (if used after --daemon)
+
+[1mOPTIONS[0m
+       rsync  uses  the  GNU  long  options  package. Many of the command line
+       options have two variants, one short and one  long.   These  are  shown
+       below, separated by commas. Some options only have a long variant.  The
+       ‘=’ for options that take a parameter is optional;  whitespace  can  be
+       used instead.
+
+       [1m--help[0m Print  a  short  help  page  describing the options available in
+              rsync and exit.  For backward-compatibility with older  versions
+              of  rsync, the help will also be output if you use the [1m-h[0m option
+              without any other args.
+
+       [1m--version[0m
+              print the rsync version number and exit.
+
+       [1m-v,[0m [1m--verbose[0m
+              This option increases the amount of information  you  are  given
+              during the transfer.  By default, rsync works silently. A single
+              [1m-v[0m will give you information about what files are  being  trans-
+              ferred  and a brief summary at the end. Two [1m-v[0m options will give
+              you information on what files are  being  skipped  and  slightly
+              more  information  at  the  end. More than two [1m-v[0m options should
+              only be used if you are debugging rsync.
+
+              Note that the names of the transferred files that are output are
+              done  using  a  default  [1m--out-format[0m of “%n%L”, which tells you
+              just the name of the file and, if the item is a link,  where  it
+              points.  At the single [1m-v[0m level of verbosity, this does not men-
+              tion when a file gets its attributes changed.  If you ask for an
+              itemized list of changed attributes (either [1m--itemize-changes[0m or
+:[K[K              adding “%i” to the [1m--out-format[0m setting),  the  output  (on  the
+              client)  increases  to mention all items that are changed in any
+              way.  See the [1m--out-format[0m option for more details.
+
+       [1m-q,[0m [1m--quiet[0m
+              This option decreases the amount of information  you  are  given
+              during  the  transfer,  notably suppressing information messages
+              from the remote server. This  option  is  useful  when  invoking
+              rsync from cron.
+
+       [1m--no-motd[0m
+              This option affects the information that is output by the client
+              at the start of a daemon transfer.  This suppresses the message-
+              of-the-day  (MOTD) text, but it also affects the list of modules
+              that the daemon sends in response to the “rsync host::”  request
+              (due to a limitation in the rsync protocol), so omit this option
+              if you want to request the list of modules from the daemon.
+
+       [1m-I,[0m [1m--ignore-times[0m
+              Normally rsync will skip any files that  are  already  the  same
+              size  and  have  the  same  modification timestamp.  This option
+              turns off this “quick check” behavior, causing all files  to  be
+              updated.
+
+       [1m--size-only[0m
+              This  modifies rsync’s “quick check” algorithm for finding files
+              that need to be transferred, changing it  from  the  default  of
+              transferring files with either a changed size or a changed last-
+              modified time to just looking for files  that  have  changed  in
+              size.   This  is  useful  when starting to use rsync after using
+              another mirroring  system  which  may  not  preserve  timestamps
+              exactly.
+:[K[K
+       [1m--modify-window[0m
+              When  comparing  two  timestamps, rsync treats the timestamps as
+              being equal if they differ by no  more  than  the  modify-window
+              value.   This  is  normally  0 (for an exact match), but you may
+              find it useful to set this to a larger value in some situations.
+              In  particular,  when  transferring to or from an MS Windows FAT
+              filesystem (which represents times with a 2-second  resolution),
+              [1m--modify-window=1[0m is useful (allowing times to differ by up to 1
+              second).
+
+       [1m-c,[0m [1m--checksum[0m
+              This changes the way rsync checks if the files have been changed
+              and  are in need of a transfer.  Without this option, rsync uses
+              a “quick check” that (by default) checks if each file’s size and
+              time of last modification match between the sender and receiver.
+              This option changes this to compare a 128-bit checksum for  each
+              file  that  has a matching size.  Generating the checksums means
+              that both sides will expend a lot of disk I/O  reading  all  the
+              data  in  the  files  in  the transfer (and this is prior to any
+              reading that will be done to transfer changed  files),  so  this
+              can slow things down significantly.
+
+              The  sending  side generates its checksums while it is doing the
+              file-system scan that builds the list of  the  available  files.
+              The  receiver  generates  its  checksums when it is scanning for
+              changed files, and will checksum any file that has the same size
+              as the corresponding sender’s file:  files with either a changed
+              size or a changed checksum are selected for transfer.
+
+              Note that rsync always verifies that each [4mtransferred[24m  file  was
+              correctly  reconstructed  on  the  receiving  side by checking a
+:[K[K/[Knn[Koo[K[1;1H
+[2;1H       [1m--modify-window[0m
+[3;1H              When  comparing  two  timestamps, rsync treats the timestamps as
+[4;1H              being equal if they differ by no  more  than  the  modify-window
+[5;1H              value.   This  is  normally  0 (for an exact match), but you may
+[6;1H              find it useful to set this to a larger value in some situations.
+[7;1H              In  particular,  when  transferring to or from an MS Windows FAT
+[8;1H              filesystem (which represents times with a 2-second  resolution),
+[9;1H              [1m--modify-window=1[0m is useful (allowing times to differ by up to 1
+[10;1H              second).
+[11;1H
+[12;1H       [1m-c,[0m [1m--checksum[0m
+[13;1H              This changes the way rsync checks if the files have been changed
+[14;1H              and  are in need of a transfer.  Without this option, rsync uses
+[15;1H              a “quick check” that (by default) checks if each file’s size and
+[16;1H              time of last modification match between the sender and receiver.
+[17;1H              This option changes this to compare a 128-bit checksum for  each
+[18;1H              file  that  has a matching size.  Generating the checksums means
+[19;1H              that both sides will expend a lot of disk I/O  reading  all  the
+[20;1H              data  in  the  files  in  the transfer (and this is prior to any
+[21;1H              reading that will be done to transfer changed  files),  so  this
+[22;1H              can slow things down significantly.
+[23;1H
+[24;1H              The  sending  side generates its checksums while it is doing the
+[25;1H              file-system scan that builds the list of  the  available  files.
+[26;1H              The  receiver  generates  its  checksums when it is scanning for
+[27;1H              changed files, and will checksum any file that has the same size
+[28;1H              as the corresponding sender’s file:  files with either a changed
+[29;1H              size or a changed checksum are selected for transfer.
+[30;1H
+[31;1H              Note that rsync always verifies that each [4mtransferred[24m  file  was
+[32;1H              correctly  reconstructed  on  the  receiving  side by checking a
+[33;1H[1;1H
+[2;1H       [1m--modify-window[0m
+[3;1H              When  comparing  two  timestamps, rsync treats the timestamps as
+[4;1H              being equal if they differ by [7mno[27m  more  than  the  modify-window
+[5;1H              value.   This  is  [7mno[27mrmally  0 (for an exact match), but you may
+[6;1H              find it useful to set this to a larger value in some situations.
+[7;1H              In  particular,  when  transferring to or from an MS Windows FAT
+[8;1H              filesystem (which represents times with a 2-second  resolution),
+[9;1H              [1m--modify-window=1[0m is useful (allowing times to differ by up to 1
+[10;1H              second).
+[11;1H
+[12;1H       [1m-c,[0m [1m--checksum[0m
+[13;1H              This changes the way rsync checks if the files have been changed
+[14;1H              and  are in need of a transfer.  Without this option, rsync uses
+[15;1H              a “quick check” that (by default) checks if each file’s size and
+[16;1H              time of last modification match between the sender and receiver.
+[17;1H              This option changes this to compare a 128-bit checksum for  each
+[18;1H              file  that  has a matching size.  Generating the checksums means
+[19;1H              that both sides will expend a lot of disk I/O  reading  all  the
+[20;1H              data  in  the  files  in  the transfer (and this is prior to any
+[21;1H              reading that will be done to transfer changed  files),  so  this
+[22;1H              can slow things down significantly.
+[23;1H
+[24;1H              The  sending  side generates its checksums while it is doing the
+[25;1H              file-system scan that builds the list of  the  available  files.
+[26;1H              The  receiver  generates  its  checksums when it is scanning for
+[27;1H              changed files, and will checksum any file that has the same size
+[28;1H              as the corresponding sender’s file:  files with either a changed
+[29;1H              size or a changed checksum are selected for transfer.
+[30;1H
+[31;1H              [7mNo[27mte that rsync always verifies that each [4mtransferred[24m  file  was
+[32;1H              correctly  reconstructed  on  the  receiving  side by checking a
+[33;1H              whole-file checksum that is generated  as  the  file  is  trans-
+              ferred,  but  that automatic after-the-transfer verification has
+              [7mno[27mthing to do with this option’s before-the-transfer “Does  this
+:[K[K/[K              file need to be updated?” check.
+:[K[K/[K
+              For  protocol  30  and  beyond  (first  supported in 3.0.0), the
+              checksum used is MD5.  For older protocols, the checksum used is
+              MD4.
+
+       [1m-a,[0m [1m--archive[0m
+              This  is equivalent to [1m-rlptgoD[0m. It is a quick way of saying you
+              want recursion and want to preserve almost everything  (with  -H
+              being  a  [7mno[27mtable  omission).   The  only exception to the above
+              equivalence is when [1m--files-from[0m is specified, in which case  [1m-r[0m
+              is [7mno[27mt implied.
+
+              [7mNo[27mte that [1m-a[0m [1mdoes[0m [1m[7mno[27m[0m[1mt[0m [1mpreserve[0m [1mhardlinks[0m, because finding multi-
+              ply-linked files is expensive.  You must separately specify  [1m-H[0m.
+
+       --[7mno[27m-OPTION
+              You  may  turn  off one or more implied options by prefixing the
+              option name with “[7mno[27m-”.  [7mNo[27mt all options may be prefixed with  a
+              “[7mno[27m-”:  only  options  that  are  implied by other options (e.g.
+              [1m--[0m[1m[7mno[27m[0m[1m-D[0m, [1m--[0m[1m[7mno[27m[0m[1m-perms[0m) or have different defaults in  various  cir-
+              cumstances  (e.g. [1m--[0m[1m[7mno[27m[0m[1m-whole-file[0m, [1m--[0m[1m[7mno[27m[0m[1m-blocking-io[0m, [1m--[0m[1m[7mno[27m[0m[1m-dirs[0m).
+              You may specify either the short or the long option  name  after
+              the “[7mno[27m-” prefix (e.g. [1m--[0m[1m[7mno[27m[0m[1m-R[0m is the same as [1m--[0m[1m[7mno[27m[0m[1m-relative[0m).
+
+              For example: if you want to use [1m-a[0m ([1m--archive[0m) but don’t want [1m-o[0m
+              ([1m--owner[0m), instead of converting  [1m-a[0m  into  [1m-rlptgD[0m,  you  could
+:[K[K              specify [1m-a[0m [1m--[0m[1m[7mno[27m[0m[1m-o[0m (or [1m-a[0m [1m--[0m[1m[7mno[27m[0m[1m-owner[0m).
+:[K[K
+:[K[K              The  order  of  the options is important:  if you specify [1m--[0m[1m[7mno[27m[0m[1m-r[0m
+:[K[K              [1m-a[0m, the [1m-r[0m option would end up being turned on, the opposite  of
+:[K[K              [1m-a[0m  [1m--[0m[1m[7mno[27m[0m[1m-r[0m.  [7mNo[27mte also that the side-effects of the [1m--files-from[0m
+:[K[K              option are [7mNO[27mT positional, as it affects the  default  state  of
+:[K[K              several  options and slightly changes the meaning of [1m-a[0m (see the
+:[K[K              [1m--files-from[0m option for more details).
+:[K[K
+:[K[K       [1m-r,[0m [1m--recursive[0m
+:[K[K              This tells rsync to  copy  directories  recursively.   See  also
+:[K[K              [1m--dirs[0m ([1m-d[0m).
+:[K[K
+:[K[K[HM              This  is equivalent to [1m-rlptgoD[0m. It is a quick way of saying you
+[HM       [1m-a,[0m [1m--archive[0m
+[HM
+[HM              MD4.
+[HM              checksum used is MD5.  For older protocols, the checksum used is
+[HM              For  protocol  30  and  beyond  (first  supported in 3.0.0), the
+[HM
+[HM              file need to be updated?” check.
+[HM              [7mno[27mthing to do with this option’s before-the-transfer “Does  this
+[HM              ferred,  but  that automatic after-the-transfer verification has
+[HM              whole-file checksum that is generated  as  the  file  is  trans-
+[HM              correctly  reconstructed  on  the  receiving  side by checking a
+[HM              [7mNo[27mte that rsync always verifies that each [4mtransferred[24m  file  was
+[HM
+[HM              size or a changed checksum are selected for transfer.
+[HM              as the corresponding sender’s file:  files with either a changed
+[HM              changed files, and will checksum any file that has the same size
+[HM              The  receiver  generates  its  checksums when it is scanning for
+[HM              file-system scan that builds the list of  the  available  files.
+[HM              The  sending  side generates its checksums while it is doing the
+[HM
+[HM              can slow things down significantly.
+[HM              reading that will be done to transfer changed  files),  so  this
+[HM              data  in  the  files  in  the transfer (and this is prior to any
+[HM              that both sides will expend a lot of disk I/O  reading  all  the
+[HM              file  that  has a matching size.  Generating the checksums means
+[HM              This option changes this to compare a 128-bit checksum for  each
+[HM              time of last modification match between the sender and receiver.
+[HM              a “quick check” that (by default) checks if each file’s size and
+[HM              and  are in need of a transfer.  Without this option, rsync uses
+[HM              This changes the way rsync checks if the files have been changed
+[HM       [1m-c,[0m [1m--checksum[0m
+[33;1H[K:[K[K[HM
+[HM              second).
+[HM              [1m--modify-window=1[0m is useful (allowing times to differ by up to 1
+[HM              filesystem (which represents times with a 2-second  resolution),
+[HM              In  particular,  when  transferring to or from an MS Windows FAT
+[HM              find it useful to set this to a larger value in some situations.
+[HM              value.   This  is  [7mno[27mrmally  0 (for an exact match), but you may
+[HM              being equal if they differ by [7mno[27m  more  than  the  modify-window
+[HM              When  comparing  two  timestamps, rsync treats the timestamps as
+[HM       [1m--modify-window[0m
+[HM
+[HM              exactly.
+[HM              a[7mno[27mther mirroring  system  which  may  [7mno[27mt  preserve  timestamps
+[HM              size.   This  is  useful  when starting to use rsync after using
+[HM              modified time to just looking for files  that  have  changed  in
+[HM              transferring files with either a changed size or a changed last-
+[HM              that need to be transferred, changing it  from  the  default  of
+[HM              This  modifies rsync’s “quick check” algorithm for finding files
+[HM       [1m--size-only[0m
+[HM
+[HM              updated.
+[HM              turns off this “quick check” behavior, causing all files  to  be
+[HM              size  and  have  the  same  modification timestamp.  This option
+[HM              [7mNo[27mrmally rsync will skip any files that  are  already  the  same
+[HM       [1m-I,[0m [1m--ig[0m[1m[7mno[27m[0m[1mre-times[0m
+[HM
+[HM              if you want to request the list of modules from the daemon.
+[HM              (due to a limitation in the rsync protocol), so omit this option
+[HM              that the daemon sends in response to the “rsync host::”  request
+[HM              of-the-day  (MOTD) text, but it also affects the list of modules
+[HM              at the start of a daemon transfer.  This suppresses the message-
+[HM              This option affects the information that is output by the client
+[33;1H[K:[K[K[HM       [1m--[0m[1m[7mno[27m[0m[1m-motd[0m
+[HM
+[HM              rsync from cron.
+[HM              from the remote server. This  option  is  useful  when  invoking
+[HM              during  the  transfer,  [7mno[27mtably suppressing information messages
+[HM              This option decreases the amount of information  you  are  given
+[HM       [1m-q,[0m [1m--quiet[0m
+[HM
+[HM              way.  See the [1m--out-format[0m option for more details.
+[HM              client)  increases  to mention all items that are changed in any
+[HM              adding “%i” to the [1m--out-format[0m setting),  the  output  (on  the
+[HM              itemized list of changed attributes (either [1m--itemize-changes[0m or
+[HM              tion when a file gets its attributes changed.  If you ask for an
+[HM              points.  At the single [1m-v[0m level of verbosity, this does [7mno[27mt men-
+[HM              just the name of the file and, if the item is a link,  where  it
+[HM              done  using  a  default  [1m--out-format[0m of “%n%L”, which tells you
+[HM              [7mNo[27mte that the names of the transferred files that are output are
+[HM
+[HM              only be used if you are debugging rsync.
+[HM              more  information  at  the  end. More than two [1m-v[0m options should
+[HM              you information on what files are  being  skipped  and  slightly
+[HM              ferred  and a brief summary at the end. Two [1m-v[0m options will give
+[HM              [1m-v[0m will give you information about what files are  being  trans-
+[HM              during the transfer.  By default, rsync works silently. A single
+[HM              This option increases the amount of information  you  are  given
+[HM       [1m-v,[0m [1m--verbose[0m
+[HM
+[HM              print the rsync version number and exit.
+[HM       [1m--version[0m
+[HM
+[HM              without any other args.
+[HM              of  rsync, the help will also be output if you use the [1m-h[0m option
+[33;1H[K:[K[K[HM              rsync and exit.  For backward-compatibility with older  versions
+[HM       [1m--help[0m Print  a  short  help  page  describing the options available in
+[HM
+[HM       used instead.
+[HM       ‘=’ for options that take a parameter is optional;  whitespace  can  be
+[HM       below, separated by commas. Some options only have a long variant.  The
+[HM       options have two variants, one short and one  long.   These  are  shown
+[HM       rsync  uses  the  GNU  long  options  package. Many of the command line
+[HM[1mOPTIONS[0m
+[HM
+[HM        -h, --help                  show this help (if used after --daemon)
+[HM        -6, --ipv6                  prefer IPv6
+[HM        -4, --ipv4                  prefer IPv4
+[HM        -v, --verbose               increase verbosity
+[HM            --sockopts=OPTIONS      specify custom TCP options
+[HM            --log-file-format=FMT   override the "log format" setting
+[HM            --log-file=FILE         override the "log file" setting
+[HM            --port=PORT             listen on alternate port number
+[HM            --[7mno[27m-detach             do [7mno[27mt detach from the parent
+[HM            --config=FILE           specify alternate rsyncd.conf file
+[HM            --bwlimit=KBPS          limit I/O bandwidth; KBytes per second
+[HM            --address=ADDRESS       bind to the specified address
+[HM            --daemon                run as an rsync daemon
+[HM
+[HM       are accepted:
+[HM       Rsync can also be run as a daemon, in which case the following  options
+[HM
+[HM       (-h) --help                  show this help (see below for -h comment)
+[HM            --version               print version number
+[HM        -6, --ipv6                  prefer IPv6
+[HM        -4, --ipv4                  prefer IPv4
+[HM            --checksum-seed=NUM     set block/file checksum seed (advanced)
+[33;1H[K:[K[K[HM            --iconv=CONVERT_SPEC    request charset conversion of filenames
+[HM            --protocol=NUM          force an older protocol version to be used
+[HM            --read-batch=FILE       read a batched update from FILE
+[HM            --only-write-batch=FILE like --write-batch but w/o updating dest
+[HM            --write-batch=FILE      write a batched update to FILE
+[HM            --bwlimit=KBPS          limit I/O bandwidth; KBytes per second
+[HM            --list-only             list the files instead of copying them
+[HM            --password-file=FILE    read daemon-access password from FILE
+[HM            --log-file-format=FMT   log updates using the specified FMT
+[HM            --log-file=FILE         log what we’re doing to the specified FILE
+[HM            --out-format=FORMAT     output updates using the specified FORMAT
+[HM        -i, --itemize-changes       output a change-summary for all updates
+[HM        -P                          same as --partial --progress
+[HM            --progress              show progress during transfer
+[HM        -h, --human-readable        output numbers in a human-readable format
+[HM        -8, --8-bit-output          leave high-bit chars unescaped in output
+[HM            --stats                 give some file-transfer stats
+[HM            --blocking-io           use blocking I/O for the remote shell
+[HM            --sockopts=OPTIONS      specify custom TCP options
+[HM            --port=PORT             specify double-colon alternate port number
+[HM            --address=ADDRESS       bind address for outgoing socket to daemon
+[HM        -s, --protect-args          [7mno[27m space-splitting; wildcard chars only
+[HM        -0, --from0                 all *from/filter files are delimited by 0s
+[HM            --files-from=FILE       read list of source-file names from FILE
+[HM            --include-from=FILE     read include patterns from FILE
+[HM            --include=PATTERN       don’t exclude files matching PATTERN
+[HM            --exclude-from=FILE     read exclude patterns from FILE
+[HM            --exclude=PATTERN       exclude files matching PATTERN
+[HM                                    repeated: --filter=’- .rsync-filter’
+[HM        -F                          same as --filter=’dir-merge /.rsync-filter’
+[HM        -f, --filter=RULE           add a file-filtering RULE
+[HM        -C, --cvs-exclude           auto-ig[7mno[27mre files in the same way CVS does
+[33;1H[K:[K[K[HM            --skip-compress=LIST    skip compressing files with suffix in LIST
+[HM            --compress-level=NUM    explicitly set compression level
+[HM        -z, --compress              compress file data during the transfer
+[HM            --link-dest=DIR         hardlink to files in DIR when unchanged
+[HM            --copy-dest=DIR         ... and include copies of unchanged files
+[HM            --compare-dest=DIR      also compare received files relative to DIR
+[HM        -y, --fuzzy                 find similar file for basis if [7mno[27m dest file
+[HM        -T, --temp-dir=DIR          create temporary files in directory DIR
+[HM            --modify-window=NUM     compare mod-times with reduced accuracy
+[HM            --size-only             skip files that match in size
+[HM        -I, --ig[7mno[27mre-times          don’t skip files that match size and time
+[HM            --contimeout=SECONDS    set daemon connection timeout in seconds
+[HM            --timeout=SECONDS       set I/O timeout in seconds
+[HM            --numeric-ids           don’t map uid/gid values by user/group name
+[HM        -m, --prune-empty-dirs      prune empty directory chains from file-list
+[HM            --delay-updates         put all updated files into place at end
+[HM            --partial-dir=DIR       put a partially transferred file into DIR
+[HM            --partial               keep partially transferred files
+[HM            --min-size=SIZE         don’t transfer any file smaller than SIZE
+[HM            --max-size=SIZE         don’t transfer any file larger than SIZE
+[HM            --max-delete=NUM        don’t delete more than NUM files
+[HM            --force                 force deletion of dirs even if [7mno[27mt empty
+[HM            --ig[7mno[27mre-errors         delete even if there are I/O errors
+[HM            --delete-excluded       also delete excluded files from dest dirs
+[HM            --delete-after          receiver deletes after transfer, [7mno[27mt before
+[HM            --delete-delay          find deletions during, delete after
+[HM            --delete-during         receiver deletes during xfer, [7mno[27mt before
+[HM            --delete-before         receiver deletes before transfer (default)
+[HM            --delete                delete extraneous files from dest dirs
+[HM            --del                   an alias for --delete-during
+[HM            --remove-source-files   sender removes synchronized files ([7mno[27mn-dir)
+[HM            --ig[7mno[27mre-existing       skip updating files that exist on receiver
+[33;1H[K:[K[K[HM            --existing              skip creating new files on receiver
+[HM            --rsync-path=PROGRAM    specify the rsync to run on remote machine
+[HM        -e, --rsh=COMMAND           specify the remote shell to use
+[HM        -B, --block-size=SIZE       force a fixed checksum block-size
+[HM        -x, --one-file-system       don’t cross filesystem boundaries
+[HM        -W, --whole-file            copy files whole (w/o delta-xfer algorithm)
+[HM        -n, --dry-run               perform a trial run with [7mno[27m changes made
+[HM        -S, --sparse                handle sparse files efficiently
+[HM            --fake-super            store/recover privileged attrs using xattrs
+[HM            --super                 receiver attempts super-user activities
+[HM        -O, --omit-dir-times        omit directories from --times
+[HM        -t, --times                 preserve modification times
+[HM        -D                          same as --devices --specials
+[HM            --specials              preserve special files
+[HM            --devices               preserve device files (super-user only)
+[HM        -g, --group                 preserve group
+[HM        -o, --owner                 preserve owner (super-user only)
+[HM        -X, --xattrs                preserve extended attributes
+[HM        -A, --acls                  preserve ACLs (implies -p)
+[HM            --chmod=CHMOD           affect file and/or directory permissions
+[HM        -E, --executability         preserve executability
+[HM        -p, --perms                 preserve permissions
+[HM        -H, --hard-links            preserve hard links
+[HM        -K, --keep-dirlinks         treat symlinked dir on receiver as dir
+[HM        -k, --copy-dirlinks         transform symlink to dir into referent dir
+[HM            --safe-links            ig[7mno[27mre symlinks that point outside the tree
+[HM            --copy-unsafe-links     only "unsafe" symlinks are transformed
+[HM        -L, --copy-links            transform symlink into referent file/dir
+[HM        -l, --links                 copy symlinks as symlinks
+[HM        -d, --dirs                  transfer directories without recursing
+[HM            --append-verify         --append w/old data in file checksum
+[HM            --append                append data onto shorter files
+[33;1H[K:[K[K[HM            --inplace               update destination files in-place
+[HM        -u, --update                skip files that are newer on the receiver
+[HM            --suffix=SUFFIX         backup suffix (default ~ w/o --backup-dir)
+[HM            --backup-dir=DIR        make backups into hierarchy based in DIR
+[HM        -b, --backup                make backups (see --suffix & --backup-dir)
+[HM            --[7mno[27m-implied-dirs       don’t send implied dirs with --relative
+[HM        -R, --relative              use relative path names
+[HM        -r, --recursive             recurse into directories
+[HM            --[7mno[27m-OPTION             turn off an implied OPTION (e.g. --[7mno[27m-D)
+[HM        -a, --archive               archive mode; equals -rlptgoD ([7mno[27m -H,-A,-X)
+[HM        -c, --checksum              skip based on checksum, [7mno[27mt mod-time & size
+[HM            --[7mno[27m-motd               suppress daemon-mode MOTD (see caveat)
+[HM        -q, --quiet                 suppress [7mno[27mn-error messages
+[HM        -v, --verbose               increase verbosity
+[HM
+[HM       to the detailed description below for a complete description.
+[HM       Here is a short summary of the options available in rsync. Please refer
+[HM[1mOPTIONS[0m [1mSUMMARY[0m
+[HM
+[HM       This is launched from cron every few hours.
+[HM
+[HM       rsync -az -e ssh --delete ~ftp/pub/samba nimbus:"~ftp/pub/tridge"
+[HM
+[HM       mand:
+[HM       I mirror a directory between my “old” and “new” ftp sites with the com-
+[HM
+[HM       a lot of time as the remote CVS protocol isn’t very efficient.
+[HM       connection. I then do CVS operations on the remote machine, which saves
+[HM       this allows me to sync with a CVS directory at the  other  end  of  the
+[HM
+[HM           sync: get put
+[HM                   rsync -Cavuzb . samba:samba/
+[33;1H[K:[K[K[HM           put:
+[HM                   rsync -avuzb --exclude ’*~’ samba:samba/ .
+[HM           get:
+[HM
+[HM       gets:
+[HM       To  synchronize my samba source trees I use the following Makefile tar-
+[HM
+[HM       “arvidsjaur”.
+[HM       each night over a PPP connection to a duplicate directory on my machine
+[HM
+[HM              rsync -Cavz . arvidsjaur:backup
+[HM
+[HM       files and mail folders, I use a cron job that runs
+[HM       To  backup  my  wife’s  home directory, which consists of large MS Word
+[HM
+[HM       Here are some examples of how I use rsync.
+[HM[1mEXAMPLES[0m
+[HM
+[HM       there is [7mno[27m need to manually start an rsync daemon.
+[HM       If you’re using one of the remote-shell transports  for  the  transfer,
+[HM
+[HM       figurations).
+[HM       details for how to run the daemon (including stand-alone and inetd con-
+[HM       that is the config file for  the  daemon,  and  it  contains  the  full
+[HM       dling  incoming  socket  connections, see the [1mrsyncd.conf[0m(5) man page —
+[HM       port).  For full information on how to start a daemon  that  will  han-
+[HM       inetd to spawn an rsync daemon for incoming connections on a particular
+[HM       a daemon already running (or it needs to have configured something like
+[HM       In order to connect to an rsync daemon, the remote system needs to have
+[HM[1mSTARTING[0m [1mAN[0m [1mRSYNC[0m [1mDAEMON[0m [1mTO[0m [1mACCEPT[0m [1mCONNECTIONS[0m
+[HM
+[HM       used to log-in to the “module”.
+[33;1H[K:[K[K[HM       The “ssh-user” will be used at the ssh level; the “rsync-user” will  be
+[HM
+[HM           rsync -av -e "ssh -l ssh-user" rsync-user@host::module /dest
+[HM
+[HM       [1m--rsh[0m option:
+[HM       the remote-shell, as in this example that uses the short version of the
+[HM       means that you must give the ’-l user’ option to  ssh  when  specifying
+[HM       value  (for  a  module  that requires user-based authentication).  This
+[HM       the user@ prefix in front of the  host  is  specifying  the  rsync-user
+[HM       If you need to specify a different remote-shell user, keep in mind that
+[HM
+[HM           rsync -av --rsh=ssh host::module /dest
+[HM
+[HM       this functionality.)  For example:
+[HM       option.  (Setting the RSYNC_RSH in the environment  will  [7mno[27mt  turn  on
+[HM       set the remote shell program on the command-line with the [1m--rsh=COMMAND[0m
+[HM       mon transfer, with the only exception being that  you  must  explicitly
+[HM       nection uses nearly the same command-line syntax as a [7mno[27mrmal rsync-dae-
+[HM       From the user’s perspective, a daemon transfer via a remote-shell  con-
+[HM
+[HM       daemon on that remote host to only allow connections from “localhost”.)
+[HM       tunnel a local port to a remote machine and configure  a  [7mno[27mrmal  rsync
+[HM       (For  a[7mno[27mther  way  to encrypt a daemon transfer, consider using ssh to
+[HM       to use features such as chroot or change the uid used  by  the  daemon.
+[HM       the  daemon is started up fresh by the remote user, you may [7mno[27mt be able
+[HM       useful if you want to encrypt a daemon-style transfer’s data, but since
+[HM       read  its  config file in the home dir of the remote user.  This can be
+[HM       shell and then spawning a single-use “daemon” server  that  expects  to
+[HM       shell  access).   Rsync  supports  connecting  to a host using a remote
+[HM       into a system (other than what is already  required  to  allow  remote-
+[HM       as  named modules) without actually allowing any new socket connections
+[HM       It is sometimes useful to use various features of an rsync daemon (such
+[33;1H[K:[K[K[HM[1mUSING[0m [1mRSYNC-DAEMON[0m [1mFEATURES[0m [1mVIA[0m [1mA[0m [1mREMOTE-SHELL[0m [1mCONNECTION[0m
+[HM
+[HM       ost (%H).
+[HM       which  forwards all data to port 873 (the rsync daemon) on the targeth-
+[HM       The command specified above uses ssh to run nc (netcat) on a proxyhost,
+[HM
+[HM         rsync -av rsync:://targethost2/module/src/ /dest/
+[HM         rsync -av targethost1::module/src/ /dest/
+[HM         export RSYNC_CONNECT_PROG=’ssh proxyhost nc %H 873’
+[HM
+[HM       string).  For example:
+[HM       in  the  rsync  command  (so  use “%%” if you need a single “%” in your
+[HM       string may contain the escape “%H” to represent the hostname  specified
+[HM       you  wish  to  run  in place of making a direct socket connection.  The
+[HM       by setting the environment variable RSYNC_CONNECT_PROG to the  commands
+[HM       You  may  also establish a daemon connection using a program as a proxy
+[HM
+[HM       connections to port 873.
+[HM       web proxy.  [7mNo[27mte that your web proxy’s configuration must support proxy
+[HM       ronment  variable  RSYNC_PROXY to a hostname:port pair pointing to your
+[HM       You may establish the connection via a web proxy by setting  the  envi-
+[HM
+[HM       users. On those systems using [1m--password-file[0m is recommended.
+[HM       WARNING:  On  some  systems  environment  variables  are visible to all
+[HM
+[HM       may be useful when scripting rsync.
+[HM       the password you want to use or using the [1m--password-file[0m option.  This
+[HM       password  prompt  by setting the environment variable RSYNC_PASSWORD to
+[HM       you will receive a password prompt when you connect. You can avoid  the
+[HM       Some  modules  on  the remote daemon may require authentication. If so,
+[HM
+[HM           rsync -av host::src /dest
+[33;1H[K:[K[K[HM
+[HM       An example that copies all the files in a remote module named “src”:
+[HM
+[HM       o      you must [7mno[27mt specify the [1m--rsh[0m ([1m-e[0m) option.
+[HM
+[HM              fied files on the remote daemon is provided.
+[HM       o      if you specify [7mno[27m local destination then a listing of the speci-
+[HM
+[HM              of accessible paths on the daemon will be shown.
+[HM       o      if  you  specify [7mno[27m path name on the remote daemon then the list
+[HM
+[HM              nect.
+[HM       o      the remote daemon may print a message of the day when  you  con-
+[HM
+[HM       o      the first word of the “path” is actually a module name.
+[HM
+[HM              separate the hostname from the path, or you use an rsync:// URL.
+[HM       o      you either use a double colon :: instead of a  single  colon  to
+[HM
+[HM       except that:
+[HM       Using  rsync  in  this  way is the same as using it with a remote shell
+[HM
+[HM       MON TO ACCEPT CONNECTIONS section below for information on that.)
+[HM       be running on the remote system, so refer to the STARTING AN RSYNC DAE-
+[HM       typically  using  TCP port 873.  (This obviously requires the daemon to
+[HM       port.  In this case you will directly connect to a remote rsync daemon,
+[HM       It  is  also possible to use rsync without a remote shell as the trans-
+[HM[1mCONNECTING[0m [1mTO[0m [1mAN[0m [1mRSYNC[0m [1mDAEMON[0m
+[HM
+[HM              rsync -av host:’file\ name\ with\ spaces’ /dest
+[HM
+[HM       instance:
+[33;1H[K:[K[K[HM       the whitespace in a way that the remote  shell  will  understand.   For
+[HM       either specify the [1m--protect-args[0m ([1m-s[0m) option, or you’ll need to escape
+[HM       If you need to transfer a filename that contains  whitespace,  you  can
+[HM
+[HM       is [7mno[27mt as easy to use as the first method.
+[HM       This  word-splitting  still works (by default) in the latest rsync, but
+[HM
+[HM              rsync host::’modname/dir1/file1 modname/dir2/file2’ /dest
+[HM              rsync -av host:’dir1/file1 dir2/file2’ /dest
+[HM
+[HM       these examples:
+[HM       Older versions of rsync required using quoted spaces in the  SRC,  like
+[HM
+[HM              rsync -av host::modname/file1 ::modname/file{3,4}
+[HM              rsync -av host::modname/file{1,2} host::modname/file3 /dest/
+[HM              rsync -av host:file1 :file2 host:file{3,4} /dest/
+[HM
+[HM       or with the hostname omitted.  For instance, all these work:
+[HM       specifying  additional remote-host args in the same style as the first,
+[HM       The syntax for requesting multiple files from a remote host is done  by
+[HM[1mADVANCED[0m [1mUSAGE[0m
+[HM
+[HM       See the following section for more details.
+[HM
+[HM              rsync somehost.mydomain.com::
+[HM
+[HM       ticular rsync daemon by leaving off the module name:
+[HM       Finally,  you can list all the (listable) modules available from a par-
+[HM
+[HM       an improved copy command.
+[HM       destination don’t have a ‘:’ in the name. In this case it behaves  like
+[HM       You  can  also  use rsync in local-only mode, where both the source and
+[33;1H[K:[K[K[HM
+[HM              rsync -av host::module /dest
+[HM              rsync -av host: /dest
+[HM
+[HM       of these copy the remote directory’s contents into “/dest”:
+[HM       slash to copy the contents of the default directory.  For example, both
+[HM       [7mNo[27mte  also  that  host  and  module references don’t require a trailing
+[HM
+[HM              rsync -av /src/foo/ /dest/foo
+[HM              rsync -av /src/foo /dest
+[HM
+[HM       of the attributes of /dest/foo:
+[HM       ing commands copies the files in the same way, including their  setting
+[HM       ing  directory on the destination.  In other words, each of the follow-
+[HM       attributes of the containing directory are transferred to the  contain-
+[HM       as  opposed  to  “copy  the  directory  by name”, but in both cases the
+[HM       trailing / on a source as meaning “copy the contents of this directory”
+[HM       an  additional  directory level at the destination.  You can think of a
+[HM       A trailing slash on the source changes this behavior to avoid  creating
+[HM
+[HM              rsync -avz foo:src/bar/ /data/tmp
+[HM
+[HM       reduce the size of data portions of the transfer.
+[HM       preserved  in  the transfer.  Additionally, compression will be used to
+[HM       bolic links, devices, attributes,  permissions,  ownerships,  etc.  are
+[HM       The  files  are  transferred in “archive” mode, which ensures that sym-
+[HM       the machine foo into the /data/tmp/bar directory on the local  machine.
+[HM       This would recursively transfer all files from the directory src/bar on
+[HM
+[HM              rsync -avz foo:src/bar /data/tmp
+[HM
+[HM       tech report for details.
+[33;1H[K:[K[K[HM       col is used to update the file by sending only the differences. See the
+[HM       already  exist on the remote system then the rsync remote-update proto-
+[HM       directory to the directory src on the machine foo. If any of the  files
+[HM       This would transfer all files matching the pattern *.c from the current
+[HM
+[HM              rsync -t *.c foo:src/
+[HM
+[HM       Perhaps the best way to explain the syntax is with some examples:
+[HM
+[HM       and a destination, one of which may be remote.
+[HM       You use rsync in the same way you use rcp. You must  specify  a  source
+[HM[1mUSAGE[0m
+[HM
+[HM       machines.
+[HM       [7mNo[27mte  that  rsync  must be installed on both the source and destination
+[HM
+[HM       command line option, or by setting the RSYNC_RSH environment  variable.
+[HM       You  can also specify any remote shell you like, either by using the [1m-e[0m
+[HM
+[HM       ferent remote shell by default, such as rsh or remsh.
+[HM       for its communications, but it may have been configured to use  a  dif-
+[HM       daemon-mode  protocol).   For remote transfers, a modern rsync uses ssh
+[HM       via a remote shell (as well as some that you can access using the rsync
+[HM       Once  installed,  you  can use rsync to any machine that you can access
+[HM
+[HM       See the file README for installation instructions.
+[HM[1mSETUP[0m
+[HM
+[HM       shell spawned process.
+[HM       is always a server, but a server can be either a daemon  or  a  remote-
+[HM       the  “server”.   Don’t confuse “server” with an rsync daemon — a daemon
+[HM       Rsync refers to the local side as the “client” and the remote  side  as
+[33;1H[K:[K[K[HM
+[HM       host, the copy occurs locally (see also the [1m--list-only[0m option).
+[HM       As expected, if neither the source or destination path specify a remote
+[HM
+[HM       nation, the files are listed in an output format similar to “ls -l”.
+[HM       As a special case, if a single source arg is specified without a desti-
+[HM
+[HM       rule).
+[HM       VIA  A REMOTE-SHELL CONNECTION” section for an exception to this latter
+[HM       rsync:// URL is specified (see also the  “USING  RSYNC-DAEMON  FEATURES
+[HM       double  colon  (::)  separator  after  a host specification, OR when an
+[HM       daemon directly happens when the source or destination path contains  a
+[HM       colon  (:)  separator  after a host specification.  Contacting an rsync
+[HM       port is used whenever the source or destination path contains a  single
+[HM       contacting  an  rsync daemon directly via TCP.  The remote-shell trans-
+[HM       using a remote-shell program as the transport (such as ssh or  rsh)  or
+[HM       There  are  two  different  ways  for rsync to contact a remote system:
+[HM
+[HM       hosts).
+[HM       current host (it does [7mno[27mt support  copying  files  between  two  remote
+[HM       Rsync  copies  files either to or from a remote host, or locally on the
+[HM[1mGENERAL[0m
+[HM
+[HM              mirroring)
+[HM       o      support for a[7mno[27mnymous or authenticated rsync daemons (ideal  for
+[HM
+[HM       o      pipelining of file transfers to minimize latency costs
+[HM
+[HM       o      does [7mno[27mt require super-user privileges
+[HM
+[HM       o      can use any transparent remote shell, including ssh or rsh
+[HM
+[33;1H[K:[K[K[HM              ig[7mno[27mre
+[HM       o      a  CVS  exclude  mode for ig[7mno[27mring the same files that CVS would
+[HM
+[HM       o      exclude and exclude-from options similar to GNU tar
+[HM
+[HM              sions
+[HM       o      support for copying links, devices, owners, groups, and  permis-
+[HM
+[HM       Some of the additional features of rsync are:
+[HM
+[HM       need to be updated.
+[HM       directly  when  the quick check indicates that the file’s data does [7mno[27mt
+[HM       attributes (as requested by options) are made on the  destination  file
+[HM       or   in  last-modified  time.   Any  changes  in  the  other  preserved
+[HM       algorithm (by default) that looks for files that have changed  in  size
+[HM       Rsync  finds  files  that  need to be transferred using a “quick check”
+[HM
+[HM       backups and mirroring and as an improved copy command for everyday use.
+[HM       and  the  existing  files in the destination.  Rsync is widely used for
+[HM       the network by sending only the differences between  the  source  files
+[HM       delta-transfer  algorithm,  which  reduces the amount of data sent over
+[HM       specification of the set of files to be copied.  It is famous  for  its
+[HM       that  control  every  aspect  of  its behavior and permit very flexible
+[HM       to/from a remote rsync daemon.  It offers a  large  number  of  options
+[HM       can  copy  locally,  to/from  a[7mno[27mther  host  over  any remote shell, or
+[HM       Rsync is a fast and extraordinarily versatile file  copying  tool.   It
+[HM[1mDESCRIPTION[0m
+[HM
+[HM       instead of copying.
+[HM       Usages with just one SRC arg and [7mno[27m DEST arg will list the source files
+[HM
+[HM               rsync [OPTION...] SRC... rsync://[USER@]HOST[:PORT]/DEST
+[33;1H[K:[K[K[HM         Push: rsync [OPTION...] SRC... [USER@]HOST::DEST
+[HM               rsync [OPTION...] rsync://[USER@]HOST[:PORT]/SRC... [DEST]
+[HM         Pull: rsync [OPTION...] [USER@]HOST::SRC... [DEST]
+[HM       Access via rsync daemon:
+[HM
+[HM         Push: rsync [OPTION...] SRC... [USER@]HOST:DEST
+[HM         Pull: rsync [OPTION...] [USER@]HOST:SRC... [DEST]
+[HM       Access via remote shell:
+[HM
+[HM       Local:  rsync [OPTION...] SRC... [DEST]
+[HM[1mSY[0m[1m[7mNO[27m[0m[1mPSIS[0m
+[HM
+[HM       rsync — a fast, versatile, remote (and local) file-copying tool
+[HM[1mNAME[0m
+[HM
+[HMrsync(1)                                                              rsync(1)
+[33;1H[K:[K[K[K:[K[K[K:[K[K[K:[K[K[K:[K[K[K:[K[K[K:[K[K[K:[K[K[K:[K[K[K:[K[K[K:[K[K/[Kee[Kxx[Kcc[Kll[Kuu[Kdd[Kee[K[1;1Hrsync(1)                                                              rsync(1)
+[2;1H
+[3;1H[1mNAME[0m
+[4;1H       rsync — a fast, versatile, remote (and local) file-copying tool
+[5;1H
+[6;1H[1mSYNOPSIS[0m
+[7;1H       Local:  rsync [OPTION...] SRC... [DEST]
+[8;1H
+[9;1H       Access via remote shell:
+[10;1H         Pull: rsync [OPTION...] [USER@]HOST:SRC... [DEST]
+[11;1H         Push: rsync [OPTION...] SRC... [USER@]HOST:DEST
+[12;1H
+[13;1H       Access via rsync daemon:
+[14;1H         Pull: rsync [OPTION...] [USER@]HOST::SRC... [DEST]
+[15;1H               rsync [OPTION...] rsync://[USER@]HOST[:PORT]/SRC... [DEST]
+[16;1H         Push: rsync [OPTION...] SRC... [USER@]HOST::DEST
+[17;1H               rsync [OPTION...] SRC... rsync://[USER@]HOST[:PORT]/DEST
+[18;1H
+[19;1H       Usages with just one SRC arg and no DEST arg will list the source files
+[20;1H       instead of copying.
+[21;1H
+[22;1H[1mDESCRIPTION[0m
+[23;1H       Rsync is a fast and extraordinarily versatile file  copying  tool.   It
+[24;1H       can  copy  locally,  to/from  another  host  over  any remote shell, or
+[25;1H       to/from a remote rsync daemon.  It offers a  large  number  of  options
+[26;1H       that  control  every  aspect  of  its behavior and permit very flexible
+[27;1H       specification of the set of files to be copied.  It is famous  for  its
+[28;1H       delta-transfer  algorithm,  which  reduces the amount of data sent over
+[29;1H       the network by sending only the differences between  the  source  files
+[30;1H       and  the  existing  files in the destination.  Rsync is widely used for
+[31;1H       backups and mirroring and as an improved copy command for everyday use.
+[32;1H
+[33;1H[1;1Hrsync(1)                                                              rsync(1)
+[2;1H
+[3;1H[1mNAME[0m
+[4;1H       rsync — a fast, versatile, remote (and local) file-copying tool
+[5;1H
+[6;1H[1mSYNOPSIS[0m
+[7;1H       Local:  rsync [OPTION...] SRC... [DEST]
+[8;1H
+[9;1H       Access via remote shell:
+[10;1H         Pull: rsync [OPTION...] [USER@]HOST:SRC... [DEST]
+[11;1H         Push: rsync [OPTION...] SRC... [USER@]HOST:DEST
+[12;1H
+[13;1H       Access via rsync daemon:
+[14;1H         Pull: rsync [OPTION...] [USER@]HOST::SRC... [DEST]
+[15;1H               rsync [OPTION...] rsync://[USER@]HOST[:PORT]/SRC... [DEST]
+[16;1H         Push: rsync [OPTION...] SRC... [USER@]HOST::DEST
+[17;1H               rsync [OPTION...] SRC... rsync://[USER@]HOST[:PORT]/DEST
+[18;1H
+[19;1H       Usages with just one SRC arg and no DEST arg will list the source files
+[20;1H       instead of copying.
+[21;1H
+[22;1H[1mDESCRIPTION[0m
+[23;1H       Rsync is a fast and extraordinarily versatile file  copying  tool.   It
+[24;1H       can  copy  locally,  to/from  another  host  over  any remote shell, or
+[25;1H       to/from a remote rsync daemon.  It offers a  large  number  of  options
+[26;1H       that  control  every  aspect  of  its behavior and permit very flexible
+[27;1H       specification of the set of files to be copied.  It is famous  for  its
+[28;1H       delta-transfer  algorithm,  which  reduces the amount of data sent over
+[29;1H       the network by sending only the differences between  the  source  files
+[30;1H       and  the  existing  files in the destination.  Rsync is widely used for
+[31;1H       backups and mirroring and as an improved copy command for everyday use.
+[32;1H
+[33;1H...skipping...
+       o      [7mexclude[27m and [7mexclude[27m-from options similar to GNU tar
+
+       o      a  CVS  [7mexclude[27m  mode for ignoring the same files that CVS would
+              ignore
+
+       o      can use any transparent remote shell, including ssh or rsh
+
+       o      does not require super-user privileges
+
+       o      pipelining of file transfers to minimize latency costs
+
+       o      support for anonymous or authenticated rsync daemons (ideal  for
+              mirroring)
+
+[1mGENERAL[0m
+       Rsync  copies  files either to or from a remote host, or locally on the
+       current host (it does not support  copying  files  between  two  remote
+       hosts).
+
+       There  are  two  different  ways  for rsync to contact a remote system:
+       using a remote-shell program as the transport (such as ssh or  rsh)  or
+       contacting  an  rsync daemon directly via TCP.  The remote-shell trans-
+       port is used whenever the source or destination path contains a  single
+       colon  (:)  separator  after a host specification.  Contacting an rsync
+       daemon directly happens when the source or destination path contains  a
+       double  colon  (::)  separator  after  a host specification, OR when an
+       rsync:// URL is specified (see also the  “USING  RSYNC-DAEMON  FEATURES
+       VIA  A REMOTE-SHELL CONNECTION” section for an exception to this latter
+       rule).
+
+       As a special case, if a single source arg is specified without a desti-
+       nation, the files are listed in an output format similar to “ls -l”.
+:[K[K/[K
+       As expected, if neither the source or destination path specify a remote
+:[K[K/[K...skipping...
+                   rsync -avuzb --[7mexclude[27m ’*~’ samba:samba/ .
+           put:
+                   rsync -Cavuzb . samba:samba/
+           sync: get put
+
+       this allows me to sync with a CVS directory at the  other  end  of  the
+       connection. I then do CVS operations on the remote machine, which saves
+       a lot of time as the remote CVS protocol isn’t very efficient.
+
+       I mirror a directory between my “old” and “new” ftp sites with the com-
+       mand:
+
+       rsync -az -e ssh --delete ~ftp/pub/samba nimbus:"~ftp/pub/tridge"
+
+       This is launched from cron every few hours.
+
+[1mOPTIONS[0m [1mSUMMARY[0m
+       Here is a short summary of the options available in rsync. Please refer
+       to the detailed description below for a complete description.
+
+        -v, --verbose               increase verbosity
+        -q, --quiet                 suppress non-error messages
+            --no-motd               suppress daemon-mode MOTD (see caveat)
+        -c, --checksum              skip based on checksum, not mod-time & size
+        -a, --archive               archive mode; equals -rlptgoD (no -H,-A,-X)
+            --no-OPTION             turn off an implied OPTION (e.g. --no-D)
+        -r, --recursive             recurse into directories
+        -R, --relative              use relative path names
+            --no-implied-dirs       don’t send implied dirs with --relative
+        -b, --backup                make backups (see --suffix & --backup-dir)
+            --backup-dir=DIR        make backups into hierarchy based in DIR
+            --suffix=SUFFIX         backup suffix (default ~ w/o --backup-dir)
+:[K[K/[K...skipping...
+            --delete-[7mexclude[27md       also delete [7mexclude[27md files from dest dirs
+            --ignore-errors         delete even if there are I/O errors
+            --force                 force deletion of dirs even if not empty
+            --max-delete=NUM        don’t delete more than NUM files
+            --max-size=SIZE         don’t transfer any file larger than SIZE
+            --min-size=SIZE         don’t transfer any file smaller than SIZE
+            --partial               keep partially transferred files
+            --partial-dir=DIR       put a partially transferred file into DIR
+            --delay-updates         put all updated files into place at end
+        -m, --prune-empty-dirs      prune empty directory chains from file-list
+            --numeric-ids           don’t map uid/gid values by user/group name
+            --timeout=SECONDS       set I/O timeout in seconds
+            --contimeout=SECONDS    set daemon connection timeout in seconds
+        -I, --ignore-times          don’t skip files that match size and time
+            --size-only             skip files that match in size
+            --modify-window=NUM     compare mod-times with reduced accuracy
+        -T, --temp-dir=DIR          create temporary files in directory DIR
+        -y, --fuzzy                 find similar file for basis if no dest file
+            --compare-dest=DIR      also compare received files relative to DIR
+            --copy-dest=DIR         ... and include copies of unchanged files
+            --link-dest=DIR         hardlink to files in DIR when unchanged
+        -z, --compress              compress file data during the transfer
+            --compress-level=NUM    explicitly set compression level
+            --skip-compress=LIST    skip compressing files with suffix in LIST
+        -C, --cvs-[7mexclude[27m           auto-ignore files in the same way CVS does
+        -f, --filter=RULE           add a file-filtering RULE
+        -F                          same as --filter=’dir-merge /.rsync-filter’
+                                    repeated: --filter=’- .rsync-filter’
+            --[7mexclude[27m=PATTERN       [7mexclude[27m files matching PATTERN
+            --[7mexclude[27m-from=FILE     read [7mexclude[27m patterns from FILE
+            --include=PATTERN       don’t [7mexclude[27m files matching PATTERN
+            --include-from=FILE     read include patterns from FILE
+:[K[K/[K            --files-from=FILE       read list of source-file names from FILE
+        -0, --from0                 all *from/filter files are delimited by 0s
+        -s, --protect-args          no space-splitting; wildcard chars only
+            --address=ADDRESS       bind address for outgoing socket to daemon
+            --port=PORT             specify double-colon alternate port number
+            --sockopts=OPTIONS      specify custom TCP options
+            --blocking-io           use blocking I/O for the remote shell
+            --stats                 give some file-transfer stats
+        -8, --8-bit-output          leave high-bit chars unescaped in output
+        -h, --human-readable        output numbers in a human-readable format
+            --progress              show progress during transfer
+        -P                          same as --partial --progress
+        -i, --itemize-changes       output a change-summary for all updates
+            --out-format=FORMAT     output updates using the specified FORMAT
+            --log-file=FILE         log what we’re doing to the specified FILE
+            --log-file-format=FMT   log updates using the specified FMT
+            --password-file=FILE    read daemon-access password from FILE
+            --list-only             list the files instead of copying them
+            --bwlimit=KBPS          limit I/O bandwidth; KBytes per second
+            --write-batch=FILE      write a batched update to FILE
+            --only-write-batch=FILE like --write-batch but w/o updating dest
+            --read-batch=FILE       read a batched update from FILE
+            --protocol=NUM          force an older protocol version to be used
+            --iconv=CONVERT_SPEC    request charset conversion of filenames
+:[K[K/[K            --checksum-seed=NUM     set block/file checksum seed (advanced)
+        -4, --ipv4                  prefer IPv4
+        -6, --ipv6                  prefer IPv6
+            --version               print version number
+:[K[K/[K       (-h) --help                  show this help (see below for -h comment)
+:[K[K/[K
+:[K[K/[K...skipping...
+              also  in  effect  (without  [1m--delete-[0m[1m[7mexclude[27m[0m[1md[0m), rsync will add a
+              “protect” filter-rule for the backup suffix to the  end  of  all
+              your existing [7mexclude[27ms (e.g. [1m-f[0m [1m"P[0m [1m*~"[0m).  This will prevent pre-
+              viously backed-up files from being deleted.  Note  that  if  you
+              are  supplying  your  own filter rules, you may need to manually
+              insert your own [7mexclude[27m/protect rule somewhere higher up in  the
+              list  so  that  it  has  a  high enough priority to be effective
+              (e.g., if your rules specify a trailing  inclusion/exclusion  of
+              ‘*’, the auto-added rule would never be reached).
+
+       [1m--backup-dir=DIR[0m
+              In  combination  with  the  [1m--backup[0m option, this tells rsync to
+              store all backups in the specified directory  on  the  receiving
+              side.   This can be used for incremental backups.  You can addi-
+              tionally specify a backup suffix using the [1m--suffix[0m option (oth-
+              erwise  the files backed up in the specified directory will keep
+              their original filenames).
+
+       [1m--suffix=SUFFIX[0m
+              This option allows you to override  the  default  backup  suffix
+              used with the [1m--backup[0m ([1m-b[0m) option. The default suffix is a ~ if
+              no -[1m-backup-dir[0m was specified, otherwise it is an empty  string.
+
+       [1m-u,[0m [1m--update[0m
+              This  forces rsync to skip any files which exist on the destina-
+              tion and have a modified time that  is  newer  than  the  source
+              file.   (If an existing destination file has a modification time
+              equal to the source file’s, it will be updated if the sizes  are
+              different.)
+
+              Note  that this does not affect the copying of symlinks or other
+              special files.  Also, a difference of file  format  between  the
+:[K[K[?1l>[?1049lgollum.deepsoft.com% mv typescript [K[K[K[K[K[K[K[K[K[K[K[Kjo[K[Kps x
+  PID TTY      STAT   TIME COMMAND
+ 3175 ?        Ssl  122:02 /usr/bin/pulseaudio --start --log-target=syslog
+ 3210 ?        S      0:00 /usr/libexec/pulse/gconf-helper
+ 3843 ?        S      0:00 /usr/bin/xterm -ls -display :0 -geometry 80x33+0-0 -T
+ 3863 pts/4    Ss     0:00 /bin/tcsh   
+ 3866 ?        S      0:00 /usr/bin/xterm -ls +sb -display :0 -geometry 80x33-0-
+ 3885 pts/5    Ss+    0:00 /usr/local/bin/emacs310
+ 3886 pts/4    S+     0:00 script
+ 3888 pts/4    S+     0:00 script
+ 3889 pts/6    Ss     0:00 -csh -i
+ 3916 tty1     Ss     0:00 -tcsh
+ 3943 tty1     S+     0:00 /bin/sh /usr/bin/startx -- -depth 24 -auth /home/hell
+ 3945 ?        S      0:00 ssh adcbone /home/heller/bin/cdxtme-hang /home/heller
+ 3960 tty1     S+     0:00 xinit /etc/X11/xinit/xinitrc -- /usr/bin/X -depth 24
+ 3966 ?        Ss     0:00 /usr/bin/ck-xinit-session /usr/bin/ssh-agent /etc/X11
+ 3975 ?        S      0:00 dbus-launch --sh-syntax --exit-with-session
+ 3976 ?        Ssl    0:01 /bin/dbus-daemon --fork --print-pid 5 --print-address
+ 4045 ?        Sl     0:10 /usr/bin/gnome-session
+ 4046 ?        Ss     0:02 /usr/bin/ssh-agent /etc/X11/xinit/Xclients
+ 4053 ?        S      0:19 /usr/libexec/gconfd-2
+ 4059 ?        Ssl    1:16 /usr/libexec/gnome-settings-daemon
+ 4061 ?        SLl    0:01 gnome-keyring-daemon --start
+ 4064 ?        Ss     0:00 seahorse-daemon
+ 4066 ?        S      0:00 /usr/libexec/gvfsd
+ 4085 ?        S      0:08 gnome-panel
+ 4088 ?        Sl    54:43 TkBattery -geometry +0+25
+ 4090 ?        Sl   705:27 totem roberts+vid.pls
+ 4092 ?        S      0:02 gnome-volume-control-applet
+ 4094 ?        S      0:00 /usr/sbin/restorecond -u
+ 4104 ?        S      0:00 /usr/libexec/im-settings-daemon
+ 4107 ?        S      0:04 /usr/libexec/gdu-notification-daemon
+ 4108 ?        S      0:00 /usr/libexec/polkit-gnome-authentication-agent-1
+ 4109 ?        S      0:00 bluetooth-applet
+ 4115 ?        S      0:31 gnome-power-manager
+ 4123 ?        S      0:00 xterm -ls -bg yellow +sb -fg black -title MicroEmacs 
+ 4124 ?        S      0:09 xterm -ls -title gollum.deepsoft.com -geometry 80x38+
+ 4125 ?        S      0:27 nm-applet --sm-disable
+ 4129 ?        S      1:08 TkSessionManager
+ 4131 ?        S      0:00 /bin/bash /home/heller/procs/check_fvwm.sh
+ 4133 ?        S      0:00 /bin/bash /home/heller/procs/TkSensor.sh
+ 4139 ?        S      0:00 /bin/bash /home/heller/procs/MiniTraffic-gollum.sh
+ 4146 ?        S     21:41 xeyes -outline green -center red -fg blue -bg blue -g
+ 4155 ?        Ssl    0:00 /usr/libexec/bonobo-activation-server --ac-activate -
+ 4161 ?        Sl   185:22 /usr/local/bin/MiniTraffic -ifacelist eth0,wlan0 -ful
+ 4163 ?        Sl    17:26 TkSensor -reparent 0xe00003 -offset 400 -geometry +25
+ 4194 ?        S     11:53 /usr/libexec/clock-applet --oaf-activate-iid=OAFIID:G
+ 4195 ?        S      0:04 /usr/libexec/notification-area-applet --oaf-activate-
+ 4202 ?        S      0:03 /usr/libexec/drivemount_applet2 --oaf-activate-iid=OA
+ 4203 ?        S      1:32 /usr/libexec/wnck-applet --oaf-activate-iid=OAFIID:GN
+ 4207 pts/0    Ss+    0:00 -csh -c (stty -ixon -ixoff;/usr/bin/mec)
+ 4208 pts/1    Ss     0:00 -csh -c (stty -ixon -ixoff;$SHELL)
+ 4231 ?        S      0:01 /usr/libexec/gvfs-gdu-volume-monitor
+ 4260 pts/0    S+     0:00 /usr/bin/mec
+ 4262 pts/1    S+     0:02 -bin/tcsh
+ 4277 ?        S      0:00 /usr/libexec/gvfs-gphoto2-volume-monitor
+ 4293 ?        Sl     0:23 /usr/libexec/gvfs-afc-volume-monitor
+ 4330 pts/6    R+     0:00 ps x
+ 4366 ?        S      0:56 /usr/bin/fvwm --replace
+ 4369 ?        S      0:00 /usr/libexec/gvfsd-metadata
+ 4448 ?        S      0:00 /usr/libexec/gconf-im-settings-daemon
+ 4500 ?        S      0:00 /usr/libexec/fvwm/2.6.6/FvwmAuto 10 5 none 0 8 0
+ 4501 ?        S      0:43 /usr/libexec/fvwm/2.6.6/FvwmIconMan 12 5 none 0 8
+ 4502 ?        S      0:00 /usr/libexec/fvwm/2.6.6/FvwmBacker 14 5 none 0 8
+ 4714 ?        Sl    14:03 /usr/local/bin/TkNewsIII -iconic
+ 4732 ?        S      0:00 /bin/bash /home/heller/bin/firefox.sh -P newdefault
+ 4733 ?        Sl   485:08 /usr/lib64/firefox/firefox -P newdefault
+ 4740 ?        Sl     0:00 /usr/lib64/firefox/bundled/libexec/at-spi-bus-launche
+ 4830 ?        Sl   133:06 /usr/lib64/firefox/firefox -contentproc -childID 1 -i
+ 4864 ?        Sl    15:22 /usr/lib64/firefox/firefox -contentproc -childID 2 -i
+ 4903 ?        Sl   311:04 /usr/lib64/firefox/firefox -contentproc -childID 3 -i
+ 4968 ?        Sl   365:13 /usr/lib64/firefox/firefox -contentproc -childID 4 -i
+ 5023 ?        Sl    32:28 /usr/lib64/firefox/firefox -contentproc -childID 5 -i
+ 5084 ?        Sl   173:40 /usr/lib64/firefox/firefox -contentproc -childID 6 -i
+ 5138 ?        Sl    40:25 /usr/lib64/firefox/firefox -contentproc -childID 7 -i
+ 5503 ?        Sl    56:53 /usr/lib64/firefox/firefox -contentproc -childID 46 -
+23725 ?        S      0:02 /usr/libexec/notification-daemon
+25294 ?        S      0:09 /usr/bin/xterm -ls -display :0 -geometry 80x33+0-0 -T
+25312 pts/2    Ss+    0:02 /bin/tcsh   
+25320 ?        S      0:25 /usr/bin/xterm -ls +sb -display :0 -geometry 80x33-0-
+25336 pts/3    Ss+    0:10 /usr/local/bin/emacs310
+gollum.deepsoft.com% ps x|grep script
+ 3886 pts/4    S+     0:00 script
+ 3888 pts/4    S+     0:00 script
+ 4332 pts/6    S+     0:00 grep script
+gollum.deepsoft.com% ^Dexit
+
+Script done on Sat 07 Mar 2020 09:32:53 AM EST
